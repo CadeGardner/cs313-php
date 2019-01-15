@@ -8,8 +8,12 @@
   justify-content: space-evenly;
 }
 
-li a {
+li {
+  list-style-type: none;
+}
 
+li a {
+  width: 30%;
   display: block;
   padding: 10px;
 }
