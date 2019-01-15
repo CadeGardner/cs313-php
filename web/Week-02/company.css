@@ -8,18 +8,18 @@
   justify-content: space-evenly;
 }
 
-nav a {
+li a {
 
   display: block;
   padding: 10px;
 }
 
- a.active {
+ li a.active {
   background-color: black;
   color: white;
 }
 
-nav a:hover:not(.active) {
+li a:hover:not(.active) {
   background-color: green;
   color: darkgray;
 }
