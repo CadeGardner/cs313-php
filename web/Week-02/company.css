@@ -2,7 +2,13 @@
   box-sizing: border-box;
 }
 
+.headerContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 nav a {
+
   display: block;
   padding: 10px;
 }
