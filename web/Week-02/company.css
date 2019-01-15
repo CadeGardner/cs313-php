@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+nav a {
+  display: block;
+  padding: 10px;
+}
+
+nav a.active {
+  background-color: black;
+  color: white;
+}
+
+nav a:hover:not(.active) {
+  background-color: green;
+  color: darkgray;
+}
+
+.loginContainer {
+  display: flex;
+  width: 85%;
+  justify-content: center;
+  align-items: center;
+}
