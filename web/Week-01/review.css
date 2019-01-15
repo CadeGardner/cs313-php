@@ -1,0 +1,23 @@
+
+.boxOne {
+  font-size: 1em;
+  background-color: yellow;
+
+}
+
+.boxTwo {
+  font-size: 2em;
+  background-color: forestgreen;
+  color: white;
+}
+
+.boxThree {
+  font-size: 3em;
+  background-color: purple;
+
+}
+
+div:hover {
+  font-weight: bolder;
+  font-size: 5em;
+}
