@@ -8,13 +8,16 @@
   justify-content: space-evenly;
 }
 
+.linkContainer {
+  width: 30%;
+}
+
 li {
   list-style-type: none;
 }
 
 li a {
-  width: 30%;
-  display: block;
+  width: 100%;
   padding: 10px;
 }
 
