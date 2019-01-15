@@ -1,5 +1,5 @@
 <?php
-    echo "";
+    echo "
     <header>
     <div class='headerContainer'>
       <nav>
