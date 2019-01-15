@@ -26,6 +26,7 @@ nav a:hover:not(.active) {
 .loginContainer {
   display: flex;
   width: 85%;
+  margin: auto;
   justify-content: center;
   align-items: center;
 }
