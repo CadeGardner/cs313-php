@@ -13,21 +13,17 @@
   border: dashed;
 }
 
-li {
-  list-style-type: none;
-}
-
-li a {
+a {
   width: 100%;
   padding: 10px;
 }
 
- li a.active {
+ a.active {
   background-color: black;
   color: white;
 }
 
-li a:hover:not(.active) {
+a:hover:not(.active) {
   background-color: green;
   color: darkgray;
 }
