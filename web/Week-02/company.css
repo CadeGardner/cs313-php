@@ -13,12 +13,13 @@
   border: dashed;
 }
 
-a {
+li a {
+  text-decoration: none;
   width: 100%;
   padding: 10px;
 }
 
- a.active {
+li a.active {
   background-color: black;
   color: white;
 }
