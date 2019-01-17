@@ -1,5 +1,5 @@
 <?php
-    echo "
+#    echo "
     <header>
     <div class='headerContainer'>
 
@@ -9,5 +9,5 @@
 
     </div>
     </header>
-    ";
- ?>
+//    ";
+ //?>
