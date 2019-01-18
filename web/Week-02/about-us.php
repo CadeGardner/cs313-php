@@ -6,7 +6,7 @@
     <title>Get to know Us</title>
   </head>
   <?php
-      $page = "about"
+
       include 'navBar.php';
    ?>
   <body>

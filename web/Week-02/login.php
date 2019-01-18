@@ -6,7 +6,7 @@
     <title>Login</title>
   </head>
   <?php
-      $page = "login";
+
       include 'navBar.php';
    ?>
   <body>

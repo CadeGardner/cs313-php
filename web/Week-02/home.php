@@ -6,7 +6,7 @@
     <title>Planners"R"Us</title>
   </head>
   <?php
-    $page = "home";
+
     include 'navBar.php';
 
    ?>
