@@ -6,18 +6,6 @@
     <title>Planners"R"Us</title>
   </head>
   <?php
-  /*
-  $page = "home";
-  public function buildHeader($page)
-  {
-    if ($page == "home"){
-      "<style>
-        #home {
-          background-color: black;
-          color: white;
-        }
-      </style>"
-      */
 
     include 'navBar.php';
   }
@@ -29,3 +17,16 @@
     <h3>Please Login</h3>
   </body>
 </html>
+
+<!-- /*
+$page = "home";
+public function buildHeader($page)
+{
+  if ($page == "home"){
+    "<style>
+      #home {
+        background-color: black;
+        color: white;
+      }
+    </style>"
+    */ -->

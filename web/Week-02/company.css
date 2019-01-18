@@ -13,6 +13,12 @@
   border: dashed;
 }
 
+li {
+  list-style-type: none;
+  padding: 20px;
+  border: solid 1px;
+}
+
 li a {
   text-decoration: none;
   width: 100%;
