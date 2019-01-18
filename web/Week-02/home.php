@@ -6,6 +6,7 @@
     <title>Planners"R"Us</title>
   </head>
   <?php
+  /*
   $page = "home";
   public function buildHeader($page)
   {
@@ -16,6 +17,7 @@
           color: white;
         }
       </style>"
+      */
 
     include 'navBar.php';
   }
