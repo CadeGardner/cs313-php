@@ -2,7 +2,7 @@
 
 $file = pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME);
 
-function makeHeader($fileName)
+function makeHeader($file)
 {
 
 if($file === "home")
