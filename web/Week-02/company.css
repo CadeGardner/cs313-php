@@ -26,12 +26,12 @@ li a {
   padding: 10px;
 }
 
-li a:active {
+li a.active {
   background-color: black;
   color: white;
 }
 
-a:hover:not(:active) {
+a:hover:not(.active) {
   background-color: green;
   color: darkgray;
 }
