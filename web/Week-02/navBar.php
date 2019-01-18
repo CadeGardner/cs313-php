@@ -4,7 +4,8 @@ $file = pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME);
 
 public function makeHeader($file)
 {
-if($file == "home")
+
+if($file === "home")
 {
   echo"<header>
     <div>
@@ -18,7 +19,7 @@ if($file == "home")
   </header>";
   }
 
-  if($file == "login")
+  if($file === "login")
   {
     echo"<header>
       <div>
@@ -32,7 +33,7 @@ if($file == "home")
     </header>";
     }
 
-    if($file == "about-us")
+    if($file === "about-us")
     {
       echo"<header>
         <div>
