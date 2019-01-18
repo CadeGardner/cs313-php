@@ -2,8 +2,6 @@
 
 $file = pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME);
 
-function makeHeader($file)
-{
 
 if($file === "home")
 {
@@ -45,9 +43,7 @@ if($file === "home")
             <div class='linkContainer'><li><a class ='active' href='about-us.php'>About Us</a></li></div>
         </div>
       </header>";
-      }
 
-      makeHeader($file);
 
   }
 ?>
