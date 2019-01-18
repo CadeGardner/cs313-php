@@ -1,7 +1,10 @@
 <?php
-public function makeHeader($page)
+
+$file = pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME);
+
+public function makeHeader($file)
 {
-if($page == "home")
+if($file == "home")
 {
   echo"<header>
     <div>
@@ -15,7 +18,7 @@ if($page == "home")
   </header>";
   }
 
-  if($page == "login")
+  if($file == "login")
   {
     echo"<header>
       <div>
@@ -29,7 +32,7 @@ if($page == "home")
     </header>";
     }
 
-    if($page == "about")
+    if($file == "about-us")
     {
       echo"<header>
         <div>
