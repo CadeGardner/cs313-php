@@ -34,10 +34,10 @@
 
        <div class="row">
 
-         <div class="col-sm-5">
+         <div class="col-sm-4">
            <img id="me" class="img-fluid" class="rounded" class="float-left" src="me.jpg" alt="">
          </div>
-         <div class="col-sm-6">
+         <div class="col-sm-8">
            <p>
              My name is Cade and I really like these type of courses because you really <br>
              get to see how things work under the hood. I like being able to see how websites <br>
@@ -51,14 +51,14 @@
 
 
          </div>
-
+         <div class="row">
+           <div class="embed-responsive embed-responsive-16by9">
+             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/nPQYvGvJ6uo" allowfullscreen></iframe>
+           </div>
 
 
        </div>
-       <div class="row">
-         <div class="embed-responsive embed-responsive-1by1">
-           <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/nPQYvGvJ6uo" allowfullscreen></iframe>
-         </div>
+
        </div>
      </div>
    </body>
