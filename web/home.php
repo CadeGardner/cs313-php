@@ -49,17 +49,15 @@
              get better at the <span class="font-italic">Beautiful</span> game.
              </p>
 
+             <div class="embed-responsive embed-responsive-16by9">
+               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/nPQYvGvJ6uo" allowfullscreen></iframe>
+             </div>
+
 
          </div>
-         <div class="row">
-           <div class="embed-responsive embed-responsive-16by9">
-             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/nPQYvGvJ6uo" allowfullscreen></iframe>
-           </div>
 
 
-       </div>
-
-       </div>
+         </div>
      </div>
    </body>
  </html>
