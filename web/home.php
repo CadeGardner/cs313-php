@@ -18,7 +18,7 @@
 
      <script type="text/javascript">
        function showVideo() {
-          document.getElementById('videoDiv').style.property = visibility: visible; 
+        return document.getElementById('videoDiv').style.property = visibility: visible; 
        }
      </script>
 
