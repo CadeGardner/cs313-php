@@ -1,8 +1,8 @@
-.container {
+body {
   background-color: #81A094;
 }
 #me {
   margin-top: 8px;
-  border: solid 2.5px;
+  border: solid 4px;
   border-color: #324B6A;/* Deep Blue */
 }
