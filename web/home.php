@@ -31,20 +31,25 @@
 
        </nav>
 
-       <div class="col-sm-5">
-         <img class="img-fluid" class="rounded" class="float-left" src="me.jpg" alt="">
-       </div>
-       <div class="col-sm-8">
-         <p>
-           My name is Cade and I really like these type of courses because you really <br>
-           get to see how things work under the hood. I like being able to see how websites <br>
-           work and design my own.
+       <div class="row">
 
-           I also really enjoy Soccer. It amazes me what people can do with their feet and a <br>
-           soccer ball. A YouTube channel called <mark>"The F2"</mark> has really inspired me to <br>
-           get better at the <span class="font-italic">Beautiful</span> game.
-         </p>
+         <div class="col-sm-5">
+           <img class="img-fluid" class="rounded" class="float-left" src="me.jpg" alt="">
+         </div>
+         <div class="col-sm-8">
+           <p>
+             My name is Cade and I really like these type of courses because you really <br>
+             get to see how things work under the hood. I like being able to see how websites <br>
+             work and design my own.
+
+             I also really enjoy Soccer. It amazes me what people can do with their feet and a <br>
+             soccer ball. A YouTube channel called <mark>"The F2"</mark> has really inspired me to <br>
+             get better at the <span class="font-italic">Beautiful</span> game.
+           </p>
+         </div>
+
        </div>
+
      </div>
    </body>
  </html>
