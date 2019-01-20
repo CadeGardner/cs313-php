@@ -18,7 +18,7 @@
 
      <script>
        function showVideo() {
-         if(document.getElementById('videoDiv'.style.visibility == "hidden")){
+         if(document.getElementById('videoDiv'.style.visibility === "hidden")){
            document.getElementById('videoDiv').style.visibility = "visible";
          } else {
            document.getElementById('videoDiv').style.visibility = "hidden";
