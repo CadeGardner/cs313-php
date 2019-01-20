@@ -18,13 +18,9 @@
 
      <script>
        function showVideo() {
-          hidden = true;
-         if(hidden){
+
            document.getElementById('videoDiv').style.visibility = "visible";
-           hidden = false;
-         } else {
-           document.getElementById('videoDiv').style.visibility = "hidden";
-           hidden = true;
+           
          }
 
       }
