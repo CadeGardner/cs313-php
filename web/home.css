@@ -18,3 +18,8 @@ p:hover{
 #videoDiv {
   visibility: hidden;
 }
+
+button {
+  border-radius: 6px;
+  color: #BECFCF;
+}
