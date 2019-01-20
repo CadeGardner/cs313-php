@@ -20,9 +20,13 @@
   <body>
     <div class="container">
 
+    <div class="row">
+        <?php include navbar.php ?>
+    </div>
+    <div class="">
+      <h1 class="jumbotron"> Coming Soon!!! </h1>
+    </div>
 
-    <?php include navbar.php ?>
-    <h1 class="jumbotron"> Coming Soon!!! </h1>
   </body>
   </div>
 </html>
