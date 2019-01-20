@@ -18,8 +18,8 @@
 
      <script>
        function showVideo() {
-         alert('showVideo called');
-        return document.getElementById('videoDiv').style.property = visibility: visible;
+         
+        return document.getElementById('videoDiv').style.visibility = "visible";
       }
      </script>
 
