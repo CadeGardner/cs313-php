@@ -49,6 +49,7 @@
              get better at the <span class="font-italic">Beautiful</span> game.
              </p>
 
+             <!-- now I need to find a way to size it -->
              <div class="embed-responsive embed-responsive-16by9">
                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/nPQYvGvJ6uo" allowfullscreen></iframe>
              </div>
