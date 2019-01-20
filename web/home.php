@@ -16,6 +16,12 @@
      <!-- Latest compiled JavaScript -->
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 
+     <script type="text/javascript">
+       function showVideo() {
+          document.getElementById('videoDiv').style.property = visibility: visible; 
+       }
+     </script>
+
    </head>
    <body>
      <div class="container">
@@ -45,12 +51,13 @@
              </p>
              <p id="paraTwo">
              I also really enjoy Soccer. It amazes me what people can do with their feet and a <br>
-             soccer ball. A YouTube channel called "The F2"has really inspired me to <br>
+             soccer ball. A YouTube channel called <button type="button" onclick="showVideo()">The F2</button>
+             has really inspired me to <br>
              get better at the <span class="font-italic">Beautiful</span> game.
              </p>
 
              <!-- now I need to find a way to size it -->
-             <div class="embed-responsive embed-responsive-16by9">
+             <div id="videoDiv" class="embed-responsive embed-responsive-16by9">
                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/nPQYvGvJ6uo" allowfullscreen></iframe>
              </div>
 

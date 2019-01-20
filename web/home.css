@@ -14,3 +14,7 @@ p{
 p:hover{
   color:
 }
+
+#videoDiv {
+  visibility: hidden;
+}
