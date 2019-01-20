@@ -34,7 +34,7 @@
        <div class="row">
 
          <div class="col-sm-5">
-           <img class="img-fluid" class="rounded" class="float-left" src="me.jpg" alt="">
+           <img id="me" class="img-fluid" class="rounded" class="float-left" src="me.jpg" alt="">
          </div>
          <div class="col-sm-6">
            <p>
