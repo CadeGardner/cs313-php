@@ -21,9 +21,9 @@
     <div class="container">
 
     <div class="row">
-        <?php include navbar.php ?>
+        <?php include 'navbar.php' ?>
     </div>
-    <div class="">
+    <div class="row">
       <h1 class="jumbotron"> Coming Soon!!! </h1>
     </div>
 
