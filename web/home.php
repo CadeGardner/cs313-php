@@ -20,10 +20,10 @@
        function showVideo() {
 
            document.getElementById('videoDiv').style.visibility = "visible";
-           
+
          }
 
-      }
+      
      </script>
 
    </head>
