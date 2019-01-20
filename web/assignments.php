@@ -18,6 +18,7 @@
 
   </head>
   <body>
+    <?php include navbar.php ?>
     <h1 class="jumbotron"> Coming Soon!!! </h1>
   </body>
 </html>
