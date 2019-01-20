@@ -56,7 +56,7 @@
 
        </div>
        <div class="row">
-         <div class="embed-responsive embed-responsive-16by9">
+         <div class="embed-responsive embed-responsive-4by3">
            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/nPQYvGvJ6uo" allowfullscreen></iframe>
          </div>
        </div>
