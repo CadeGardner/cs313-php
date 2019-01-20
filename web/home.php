@@ -41,12 +41,13 @@
            <p>
              My name is Cade and I really like these type of courses because you really <br>
              get to see how things work under the hood. I like being able to see how websites <br>
-             work and design my own.
-
+             work and design my own. <br>
+             </p>
+             <p id="paraTwo">
              I also really enjoy Soccer. It amazes me what people can do with their feet and a <br>
-             soccer ball. A YouTube channel called <mark>"The F2"</mark> has really inspired me to <br>
+             soccer ball. A YouTube channel called "The F2"has really inspired me to <br>
              get better at the <span class="font-italic">Beautiful</span> game.
-           </p>
+             </p>
          </div>
 
        </div>
