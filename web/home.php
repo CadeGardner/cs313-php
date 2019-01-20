@@ -16,11 +16,11 @@
      <!-- Latest compiled JavaScript -->
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 
-     <script type="text/javascript">
+     <script>
        function showVideo() {
-         alert(showVideo called);
+         alert('showVideo called');
         return document.getElementById('videoDiv').style.property = visibility: visible;
-       }
+      }
      </script>
 
    </head>
