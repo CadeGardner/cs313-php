@@ -18,8 +18,12 @@
 
      <script>
        function showVideo() {
-         
-        return document.getElementById('videoDiv').style.visibility = "visible";
+         if(document.getElementById('videoDiv'.style.visibility == "hidden")){
+           document.getElementById('videoDiv').style.visibility = "visible";
+         } else {
+           document.getElementById('videoDiv').style.visibility = "hidden";
+         }
+
       }
      </script>
 
