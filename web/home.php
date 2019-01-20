@@ -36,7 +36,7 @@
          <div class="col-sm-5">
            <img class="img-fluid" class="rounded" class="float-left" src="me.jpg" alt="">
          </div>
-         <div class="col-sm-7">
+         <div class="col-sm-6">
            <p>
              My name is Cade and I really like these type of courses because you really <br>
              get to see how things work under the hood. I like being able to see how websites <br>
