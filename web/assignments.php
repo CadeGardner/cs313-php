@@ -18,7 +18,11 @@
 
   </head>
   <body>
+    <div class="container">
+
+
     <?php include navbar.php ?>
     <h1 class="jumbotron"> Coming Soon!!! </h1>
   </body>
+  </div>
 </html>
