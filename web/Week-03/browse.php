@@ -18,13 +18,21 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 
+    <style media="screen">
+      form{
+        max-width: 85%;
+        margin: auto;
+      }
+    </style>
   </head>
   <body>
+<form class="" action="" method="post">
+
 
     <!-- New Item -->
     <div class="item">
 
-      <h2>First Item</h2>
+      <h2>Nordic Axe</h2>
       <!-- Image -->
       <div class="">
         <img src="" alt="">
@@ -40,7 +48,7 @@
     <!-- New Item -->
     <div class="item">
 
-      <h2>Second Item</h2>
+      <h2>Double Headed Battle Axe</h2>
       <!-- Image -->
       <div class="">
         <img src="" alt="">
@@ -58,7 +66,7 @@
       <!-- New Item -->
       <div class="item">
 
-        <h2>Third Item</h2>
+        <h2>Nordic Shield</h2>
         <!-- Image -->
         <div class="">
           <img src="" alt="">
@@ -76,7 +84,7 @@
         <!-- New Item -->
         <div class="item">
 
-          <h2>Fourth Item</h2>
+          <h2>Nordic Sword</h2>
           <!-- Image -->
           <div class="">
             <img src="" alt="">
@@ -88,6 +96,6 @@
           </div>
           <button type="button" name="button"> Add </button>
         </div>
-
+</form>
   </body>
 </html>
