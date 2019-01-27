@@ -20,7 +20,7 @@
 
   </head>
   <body>
-    <h1>Can you see me</h1>
+
     <!-- New Item -->
     <div class="item">
 
@@ -51,6 +51,8 @@
         <p>This is what you're buying </p>
       </div>
 
+      <button type="button" name="button"> Add </button>
+
     </div>
 
       <!-- New Item -->
@@ -67,6 +69,7 @@
         <div class="">
           <p>This is what you're buying </p>
         </div>
+        <button type="button" name="button"> Add </button>
 
       </div>
 
@@ -83,6 +86,7 @@
           <div class="">
             <p>This is what you're buying </p>
           </div>
+          <button type="button" name="button"> Add </button>
         </div>
 
   </body>
