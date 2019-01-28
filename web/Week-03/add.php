@@ -9,6 +9,7 @@ if(isset($_POST['name'])) {
   $_SESSION['name'] = $_POST['name'];
   $_SESSION['price'] = $_POST['price'];
   echo count($_SESSION['name']);
+  exit();
 }
 
 print_r($_SESSION);
