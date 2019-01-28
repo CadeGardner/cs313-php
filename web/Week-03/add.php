@@ -11,6 +11,9 @@ if(isset($_POST['source'])) {
   echo count($_SESSION['name']);
 exit();
 }
+
+$img = $_SESSION['src'];
+echo "$img";
 echo "<h1>".count($_SESSION['name'])."<h1>";
 echo "testing";
 ?>
