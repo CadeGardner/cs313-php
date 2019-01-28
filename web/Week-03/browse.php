@@ -39,6 +39,7 @@
         }
 
       });
+      alert('function called and returned');
       }
 
     </script>
