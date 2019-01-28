@@ -22,7 +22,7 @@
 
       function add_to_cart(id) {
       var item = document.getElementById(id);
-      var image = item.getElementsByTagName('img').src;
+      var source = item.getElementsByTagName("img")[0].src;
       var name = document.getElementById(id + '_name').value;
       var price = document.getElementById(id + '_price').value;
 
@@ -30,7 +30,7 @@
         type:'post',
         url:'add.php',
         data:{
-          source: image,
+          source: source,
           name: name,
           price: price
         },
@@ -63,9 +63,8 @@
 
       <h2>Nordic Axe</h2>
       <!-- Image -->
-      <div class="">
+
         <img src="nordic axe.jpg" alt="Nordic Axe">
-      </div>
 
       <!-- Description -->
       <div class="items" >
