@@ -74,7 +74,7 @@
       <input type="hidden" name="item1_name" value="Nordic Axe">
       <input type="hidden" name="item1_price" value="$75.00">
 
-      <button type="button" name="button" onclick="add_to_cart(item1)">
+      <button type="button" name="button" onclick="add_to_cart('item1')">
         Add to Cart
       </button>
 
@@ -95,7 +95,7 @@
       </div>
       <input type="hidden" name="item2_name" value="Nordic Double Headed Axe">
       <input type="hidden" name="item2_price" value="$105.00">
-      <button type="button" name="button" onclick="add_to_cart(item2)">
+      <button type="button" name="button" onclick="add_to_cart('item2')">
         Add to Cart
       </button>
 
@@ -117,7 +117,7 @@
         </div>
         <input type="hidden" name="item3_name" value="Nordic Shield">
         <input type="hidden" name="item3_price" value="$60.00">
-        <button type="button" name="button" onclick="add_to_cart(item3)">
+        <button type="button" name="button" onclick="add_to_cart('item3')">
           Add to Cart
         </button>
 
@@ -138,7 +138,7 @@
           </div>
           <input type="hidden" name="item4_name" value="Nordic Sword">
           <input type="hidden" name="item4_price" value="$55.00">
-          <button type="button" name="button" onclick="add_to_cart(item4)">
+          <button type="button" name="button" onclick="add_to_cart('item4')">
             Add to Cart
           </button>
         </div>
