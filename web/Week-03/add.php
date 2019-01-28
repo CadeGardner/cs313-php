@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-echo count($_SESSION['name']);
+
 
 if(isset($_POST['source'])) {
 
@@ -9,7 +9,7 @@ if(isset($_POST['source'])) {
   $_SESSION['name'] = $_POST['name'];
   $_SESSION['price'] = $_POST['price'];
   echo count($_SESSION['name']);
-
+exit();
 }
-
+echo count($_SESSION['name']);
 ?>
