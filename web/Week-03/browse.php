@@ -52,7 +52,7 @@
     </style>
   </head>
   <body>
-<form class="" action="add.php" method="post">
+
 
   <div id='shopping_cart'>
 
@@ -142,6 +142,5 @@
           </button>
         </div>
 
-</form>
   </body>
 </html>

@@ -3,7 +3,7 @@ session_start();
 
 
 
-if(isset($_POST['source'])) {
+if(isset($_POST['name'])) {
 
   $_SESSION['src'] = $_POST['source'];
   $_SESSION['name'] = $_POST['name'];
