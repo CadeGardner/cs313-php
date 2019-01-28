@@ -35,7 +35,7 @@
           price: price
         },
         success: function(response) {
-          document.getElementById('shopping_cart').value = response;
+          document.getElementById('shopping_cart').innerHTML = response;
         }
 
       });
