@@ -22,12 +22,23 @@
 
       function add_to_cart(id) {
       var item = document.getElementById(id);
-      var image = item.getElementsByTagName('img')[0].src;
-      var name = document.getElementById('')
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = serverResponse();
-        xhttp.open("", "ajax_info.txt", true);
-        xhttp.send();
+      var image = item.getElementsByTagName('img').src;
+      var name = document.getElementById(id + '_name').value;
+      var price = document.getElementById(id + '_price').value;
+
+      $.ajax({
+        type:'post',
+        url:'add.php',
+        data:{
+          source: image,
+          name: name,
+          price: price
+        },
+        success: function(response) {
+          document.getElementById('shopping_cart').value = response;
+        }
+
+      });
       }
 
     </script>
@@ -42,6 +53,9 @@
   <body>
 <form class="" action="add.php" method="post">
 
+  <div id='shopping_cart'>
+
+  </div>
 
     <!-- New Item -->
     <div class="items" id="item1">
@@ -59,7 +73,10 @@
       <input type="hidden" name="item1_name" value="Nordic Axe">
       <input type="hidden" name="item1_price" value="$75.00">
 
-      <button type="button" name="button"> Add </button>
+      <button type="button" name="button" onclick="add_to_cart(item1)">
+        Add to Cart
+      </button>
+
     </div>
 
     <!-- New Item -->
@@ -77,7 +94,9 @@
       </div>
       <input type="hidden" name="item2_name" value="Nordic Double Headed Axe">
       <input type="hidden" name="item2_price" value="$105.00">
-      <button type="button" name="button"> Add </button>
+      <button type="button" name="button" onclick="add_to_cart(item2)">
+        Add to Cart
+      </button>
 
     </div>
 
@@ -97,7 +116,9 @@
         </div>
         <input type="hidden" name="item3_name" value="Nordic Shield">
         <input type="hidden" name="item3_price" value="$60.00">
-        <button type="button" name="button"> Add </button>
+        <button type="button" name="button" onclick="add_to_cart(item3)">
+          Add to Cart
+        </button>
 
       </div>
 
@@ -116,7 +137,9 @@
           </div>
           <input type="hidden" name="item4_name" value="Nordic Sword">
           <input type="hidden" name="item4_price" value="$55.00">
-          <button type="button" name="button"> Add to Cart </button>
+          <button type="button" name="button" onclick="add_to_cart(item4)">
+            Add to Cart
+          </button>
         </div>
 
 </form>
