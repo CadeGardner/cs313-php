@@ -23,5 +23,13 @@
   </head>
   <body>
 <h1>This is your cart!!</h1>
+
+    <?php
+      echo"<div class='cartItems'>";
+      for($i = 0; $i < count($_SESSION['src']; $i++) )
+      echo"<img src='".$_SESSION['src'][$i]."'>";
+      echo "<p>".$_SESSION['name'][$i]."</p>";
+      echo "<p>".$_SESSION['price'][$i]."</p>";
+     ?>
   </body>
 </html>
