@@ -53,11 +53,16 @@
   </head>
   <body>
 
+  <div class="">
+    <a href="view_cart.php">
+      <button type="button" name="button">View Cart</button>
+    </a>
+
 
   <div id='shopping_cart'>
 
   </div>
-
+ </div>
     <!-- New Item -->
     <div class="items" id="item1">
 
