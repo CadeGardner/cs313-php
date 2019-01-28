@@ -71,8 +71,8 @@
       <div class="items" >
         <p>This is what you're buying </p>
       </div>
-      <input type="hidden" name="item1_name" value="Nordic Axe">
-      <input type="hidden" name="item1_price" value="$75.00">
+      <input type="hidden" id="item1_name" value="Nordic Axe">
+      <input type="hidden" id="item1_price" value="$75.00">
 
       <button type="button" name="button" onclick="add_to_cart('item1')">
         Add to Cart
@@ -93,8 +93,8 @@
       <div class="">
         <p>This is what you're buying </p>
       </div>
-      <input type="hidden" name="item2_name" value="Nordic Double Headed Axe">
-      <input type="hidden" name="item2_price" value="$105.00">
+      <input type="hidden" id="item2_name" value="Nordic Double Headed Axe">
+      <input type="hidden" id="item2_price" value="$105.00">
       <button type="button" name="button" onclick="add_to_cart('item2')">
         Add to Cart
       </button>
@@ -115,14 +115,13 @@
         <div class="">
           <p>This is what you're buying </p>
         </div>
-        <input type="hidden" name="item3_name" value="Nordic Shield">
-        <input type="hidden" name="item3_price" value="$60.00">
+        <input type="hidden" id="item3_name" value="Nordic Shield">
+        <input type="hidden" id="item3_price" value="$60.00">
         <button type="button" name="button" onclick="add_to_cart('item3')">
           Add to Cart
         </button>
 
       </div>
-
         <!-- New Item -->
         <div class="items" id="item">
 
@@ -136,8 +135,8 @@
           <div class="">
             <p>This is what you're buying </p>
           </div>
-          <input type="hidden" name="item4_name" value="Nordic Sword">
-          <input type="hidden" name="item4_price" value="$55.00">
+          <input type="hidden" id="item4_name" value="Nordic Sword">
+          <input type="hidden" id="item4_price" value="$55.00">
           <button type="button" name="button" onclick="add_to_cart('item4')">
             Add to Cart
           </button>
