@@ -45,27 +45,27 @@
     </script>
 
     <style media="screen">
-      form{
-        max-width: 85%;
-        margin: auto;
-      }
+
     </style>
   </head>
   <body>
+<div class="container">
 
+
+<div class="row">
+  <div class="col">
 
     <a href="view_cart.php">
-      <button type="button" name="button">View Cart</button>
-    </a>
-
-
-  <div id="shopping_cart">
+    <button type="button" name="button">View Cart</button>
+  </a>
+  <div id='shopping_cart'>
     <h3>Your Items: 0 </h3>
   </div>
+</div>
 
- </div>
+    <div class="row">
     <!-- New Item -->
-    <div class="items" id="item1">
+    <div class="col-sm-3" id="item1">
 
       <h2>Nordic Axe</h2>
       <!-- Image -->
@@ -86,7 +86,7 @@
     </div>
 
     <!-- New Item -->
-    <div class="items" id="item2">
+    <div class="col-sm-3" id="item2">
 
       <h2>Nordic Double Headed Axe</h2>
       <!-- Image -->
@@ -107,7 +107,7 @@
     </div>
 
       <!-- New Item -->
-      <div class="items" id="item3">
+      <div class="col-sm-3" id="item3">
 
         <h2>Nordic Shield</h2>
         <!-- Image -->
@@ -128,7 +128,7 @@
 
       </div>
         <!-- New Item -->
-        <div class="items" id="item4">
+        <div class="col-sm-3" id="item4">
 
           <h2 >Nordic Sword</h2>
           <!-- Image -->
@@ -146,6 +146,7 @@
             Add to Cart
           </button>
         </div>
-
+    </div>
+  </div>
   </body>
 </html>
