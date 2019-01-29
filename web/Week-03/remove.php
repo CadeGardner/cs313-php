@@ -1,7 +1,7 @@
 <?php   session_start();
 
 $index = $_POST['index'];
-$size = count($_SESSION['src'];
+$size = count($_SESSION['src']);
 // for($i = 0; $i < $index; $i++) {
 //   $source[$i] = $_SESSION['src'][$i];
 //   $name[$i] = $_SESSION['name'][$i];
