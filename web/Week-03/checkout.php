@@ -26,12 +26,30 @@
     <div class="address">
       <form class="form-group" action="confirm.php" method="post">
         <h1>Please Enter Your Address</h1>
-        <input type="text" name="fname" value="" placeholder="First Name"> <br>
-        <input type="text" name="lname" value="" placeholder="Last Name"> <br>
-        <input type="text" name="street" value="" placeholder="Address Line 1 "> <br>
-        <input type="text" name="city" value="" placeholder="City"> <br>
-        <input type="text" name="state" value="" placeholder="State"> <br>
-        <input type="text" name="zip" value="" placeholder="Zip Code"> <br>
+        <div class="form-group">
+          <input type="text" name="fname" value="" placeholder="First Name">
+        </div>
+
+        <div class="form-group">
+          <input type="text" name="lname" value="" placeholder="Last Name">
+        </div>
+
+         <div class="form-group">
+             <input type="text" name="street" value="" placeholder="Address Line 1 ">
+         </div>
+
+         <div class="form-group">
+           <input type="text" name="city" value="" placeholder="City">
+         </div>
+
+        <div class="form-group">
+          <input type="text" name="state" value="" placeholder="State">
+        </div>
+
+        <div class="form-group">
+          <input type="text" name="zip" value="" placeholder="Zip Code">
+        </div>
+
 
         <a href="view_cart.php">
           <button type="button" name="button"> Back to Cart </button>

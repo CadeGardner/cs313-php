@@ -69,6 +69,10 @@
       color: white;
     }
 
+    button {
+      border-radius: 6px;
+    }
+
     </style>
   </head>
   <body>

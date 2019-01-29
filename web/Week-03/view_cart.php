@@ -51,6 +51,7 @@
           margin: 15px;
           background-color: #353535;
           color: white;
+          border-radius: 6px;
         }
 
         #buttons {
