@@ -22,9 +22,17 @@
 
     <style media="screen">
 
+      * {
+        box-sizing: border-box;
+      }
+
       form {
         max-width: 60%;
         margin:auto;
+      }
+
+      input {
+        margin: 15px;
       }
     </style>
 
@@ -34,28 +42,28 @@
     <div class="address">
       <form class="form-group" action="confirm.php" method="post">
         <h1>Please Enter Your Address</h1>
-        <div class="form-group">
-          <input type="text" name="fname" value="" placeholder="First Name">
+        <div class="form-control">
+          <input type="text" name="fname" placeholder="First Name">
         </div>
 
         <div class="form-control">
-          <input type="text" name="lname" value="" placeholder="Last Name">
+          <input type="text" name="lname" placeholder="Last Name">
         </div>
 
          <div class="form-control">
-             <input type="text" name="street" value="" placeholder="Address Line 1 ">
+             <input type="text" name="street" placeholder="Address Line 1 ">
          </div>
 
          <div class="form-control">
-           <input type="text" name="city" value="" placeholder="City">
+           <input type="text" name="city" placeholder="City">
          </div>
 
         <div class="form-control">
-          <input type="text" name="state" value="" placeholder="State">
+          <input type="text" name="state" placeholder="State">
         </div>
 
         <div class="form-control">
-          <input type="text" name="zip" value="" placeholder="Zip Code">
+          <input type="text" name="zip" placeholder="Zip Code">
         </div>
 
 
