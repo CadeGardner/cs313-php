@@ -43,12 +43,10 @@ for($i = 0; $i < $size; $i++){
  }
  else
  {
-   echo"<img src='".$_SESSION['src'][$i]."'>";
+   echo"<div><img src='".$_SESSION['src'][$i]."'>";
    echo "<p>".$_SESSION['name'][$i]."</p>";
    echo "<p>".$_SESSION['price'][$i]."</p>";
-   echo " <button type='button' name='button' onclick='remove($i)'>
-  Remove Item
-</button>";
+   echo " <button type='button' name='button' onclick='remove($i)'>Remove Item</button></div>";
  }
 }
 
