@@ -42,13 +42,11 @@
       <h1>This is your cart!!</h1>
     </div>
 
-    <div class="p-2 border container">
-
 
     <?php
 
       for($i = 0; $i < count($_SESSION['src']); $i++){
-      echo"<div class='row' class='cartItems'>";
+      echo"<div class='container' class='cartItems'>";
       echo "<div class='row'><p>".$_SESSION['name'][$i]."</p><br>";
       echo "<p>".$_SESSION['price'][$i]."</p></div>";
       echo"<div><img src='".$_SESSION['src'][$i]."'></div>";
@@ -70,7 +68,7 @@
        </a>
 
      </div>
-  </div>
+
 
 
   </body>
