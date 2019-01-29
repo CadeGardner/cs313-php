@@ -50,9 +50,10 @@
       background-color: #A99C90;
     }
 
-    .items {
-      margin-top: 15px;
-      align-items: center;
+    #header {
+      background-color: #353535;
+      color: white; 
+
     }
 
     </style>
@@ -61,7 +62,7 @@
 <div class="container">
 
 
-<div class="row" class="items">
+<div class="row" id="header">
   <div class="col">
 
     <div id='shopping_cart'>
