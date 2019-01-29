@@ -2,7 +2,10 @@
 
 $index = $_POST['index'];
 $size = count($_SESSION['src']);
-
+if($size == 0)
+{
+  return;
+}
 
 unset($_SESSION['src'][$index]);
 unset($_SESSION['name'][$index]);
