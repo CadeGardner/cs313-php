@@ -52,28 +52,31 @@
 
     #header {
       background-color: #353535;
-      color: white; 
+      color: white;
 
     }
 
     </style>
   </head>
   <body>
-<div class="container">
 
+  <div class="container-fluid">
+    <div class="row" id="header">
+      <div class="col">
 
-<div class="row" id="header">
-  <div class="col">
+        <div id='shopping_cart'>
+          <h3>Your Items: 0 </h3>
+        </div>
 
-    <div id='shopping_cart'>
-      <h3>Your Items: 0 </h3>
+        <a href="view_cart.php">
+        <button type="button" name="button">View Cart</button>
+      </a>
+
     </div>
 
-    <a href="view_cart.php">
-    <button type="button" name="button">View Cart</button>
-  </a>
+  </div>
 
-</div>
+<div class="container">
 
     <div class="row">
     <!-- New Item -->
