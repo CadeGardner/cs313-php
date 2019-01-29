@@ -14,7 +14,7 @@ unset($_SESSION['price'][$index]);
 
 for($i = 0; $i < $size; $i++){
   //if($i == $index) {
-  if(!isset($_SESSION['src'][$i]))
+  if(!isset($_SESSION['src'][$i])){
   echo "<script>
     document.getElementById('button". $index."').style.display = none;
     </script>";
