@@ -60,6 +60,10 @@
       margin-bottom: 20px;
     }
 
+    #itemsContainer {
+      margin-top: 3%;
+    }
+
     </style>
   </head>
   <body>
@@ -80,7 +84,7 @@
 
   </div>
 
-<div class="container">
+<div class="container" id="itemsContainer">
 
     <div class="row">
     <!-- New Item -->
