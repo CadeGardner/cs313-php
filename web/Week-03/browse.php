@@ -35,7 +35,7 @@
           price: price
         },
         success: function(response) {
-          document.shopping_cart.getElementsByTagName('b').innerHTML = response;
+          document.getElementsById('cart_total').innerHTML = response;
         }
 
       });
@@ -60,8 +60,8 @@
 
 
   <div id='shopping_cart'>
-    <p>Your Items:</p>
-    <b>0</b>
+    <h3>Your Items:</h3>
+    <h3 id="cart_total">3</h3>
   </div>
  </div>
     <!-- New Item -->
