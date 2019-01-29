@@ -10,5 +10,5 @@ if(isset($_POST['name'])) {
   //exit();
 }
   $numItems = count($_SESSION['name']);
-  echo "<h3> Your Items: $numItems";
+  echo "<h3> Your Items: $numItems</h3>";
 ?>
