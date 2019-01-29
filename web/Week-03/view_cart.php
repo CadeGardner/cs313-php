@@ -81,9 +81,7 @@
          <a href="browse.php">
            <button type="button" name="button">Back to Browse</button>
          </a>
-       </div>
-
-       <div class="col-sm-5">
+       
          <a href="checkout.php">
            <button type="button" name="button">Proceed to checkout</button>
          </a>
