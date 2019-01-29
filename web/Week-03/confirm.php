@@ -1,7 +1,7 @@
 <?php session_start();
 
-$firstName = htmlspecialchars($_POST['lname']);
-$lastName = htmlspecialchars($_POST['fname']);
+$firstName = htmlspecialchars($_POST['fname']);
+$lastName = htmlspecialchars($_POST['lname']);
 $street = htmlspecialchars($_POST['street']);
 $city = htmlspecialchars($_POST['city']);
 $state = htmlspecialchars($_POST['state']);
@@ -33,7 +33,7 @@ $zip = htmlspecialchars($_POST['zip']);
     <h2>Thank You for your Purchase </h2>
     <h4>Your Items have been sent to:</h4>
     <?php
-      echo "<div class=''> $firstName .' '. $lastName";
+      echo "<div class=''> $firstName $lastName";
       echo "$street";
       echo "$city";
       echo "$state";
