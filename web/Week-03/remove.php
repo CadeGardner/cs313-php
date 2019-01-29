@@ -26,11 +26,11 @@ for($i = 0; $i < count($_SESSION['src']); $i++) {
 
 echo"<div class='cartContainer' id='cartItems'>";
 for($i = 0; $i < count($_SESSION['src']); $i++){
-  if(isset($_SESSION['src'][$i]) {
-echo"<img src='".$_SESSION['src'][$i]."'>";
-echo "<p>".$_SESSION['name'][$i]."</p>";
-echo "<p>".$_SESSION['price'][$i]."</p>";
-echo " <button type='button' name='button' onclick='remove($i)'>
+  if(isset($_SESSION['src'][$i])) {
+    echo"<img src='".$_SESSION['src'][$i]."'>";
+    echo "<p>".$_SESSION['name'][$i]."</p>";
+    echo "<p>".$_SESSION['price'][$i]."</p>";
+    echo " <button type='button' name='button' onclick='remove($i)'>
    Remove Item
  </button>";
  }
