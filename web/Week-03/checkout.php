@@ -54,10 +54,12 @@
     </style>
   </head>
   <body>
-
+<div id="header">
+  <h1>Please Enter Your Address</h1>
+</div>
     <div class="address">
       <form action="confirm.php" method="post">
-        <h1>Please Enter Your Address</h1>
+
         <div class="form-group">
           <input type="text" class="form-control" name="fname" placeholder="First Name">
         </div>
