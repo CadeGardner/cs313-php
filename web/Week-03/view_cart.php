@@ -36,6 +36,14 @@
 
       }
     </script>
+
+    <style>
+
+        button {
+          margin: 15px;
+        }
+    </style>
+
   </head>
   <body>
     <div class="container-fluid" id="header">
