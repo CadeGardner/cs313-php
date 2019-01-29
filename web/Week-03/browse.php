@@ -130,7 +130,7 @@
 
       </div>
         <!-- New Item -->
-        <div class="align-self-stretch" id="item4">
+        <div class="p-2 border align-self-stretch" id="item4">
 
           <h2 >Nordic Sword</h2>
           <!-- Image -->
