@@ -8,7 +8,6 @@ $index = $_POST['index'];
 //   $price[$i] = $_SESSION['price'][$i];
 // }
 
-$src = $_SESSION['src'];
 
 // if($index == 0) {
 //   //array_shift($_SESSION['src']);
@@ -22,7 +21,7 @@ unset($_SESSION['src'][$index]);
 unset($_SESSION['name'][$index]);
 unset($_SESSION['price'][$index]);
 
-$_SESSION['src'] = $src;
+
 
 //
 // for($i = 0; $i < count($_SESSION['src']); $i++) {
@@ -38,19 +37,19 @@ $_SESSION['src'] = $src;
 // print_r(array_values($name));
 echo print_r($_SESSION);
 
-// for($i = 0; $i < count($_SESSION['src']); $i++){
-//   if(!isset($_SESSION['src'][$i])) {
-//     continue;
-//  }
-//  else
-//  {
-//    echo"<img src='".$_SESSION['src'][$i]."'>";
-//    echo "<p>".$_SESSION['name'][$i]."</p>";
-//    echo "<p>".$_SESSION['price'][$i]."</p>";
-//    echo " <button type='button' name='button' onclick='remove($i)'>
-//   Remove Item
-// </button>";
-//  }
-// }
+for($i = 0; $i < count($_SESSION['src']); $i++){
+  if($i == $index)) {
+    continue;
+ }
+ else
+ {
+   echo"<img src='".$_SESSION['src'][$i]."'>";
+   echo "<p>".$_SESSION['name'][$i]."</p>";
+   echo "<p>".$_SESSION['price'][$i]."</p>";
+   echo " <button type='button' name='button' onclick='remove($i)'>
+  Remove Item
+</button>";
+ }
+}
 
 ?>
