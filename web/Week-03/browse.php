@@ -55,12 +55,14 @@
 <div class="row">
   <div class="col">
 
+    <div id='shopping_cart'>
+      <h3>Your Items: 0 </h3>
+    </div>
+
     <a href="view_cart.php">
     <button type="button" name="button">View Cart</button>
   </a>
-  <div id='shopping_cart'>
-    <h3>Your Items: 0 </h3>
-  </div>
+
 </div>
 
     <div class="row">
@@ -128,7 +130,7 @@
 
       </div>
         <!-- New Item -->
-        <div class="col-sm-3" id="item4">
+        <div class="col-sm-3" class="align-self-start" id="item4">
 
           <h2 >Nordic Sword</h2>
           <!-- Image -->
