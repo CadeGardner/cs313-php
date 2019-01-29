@@ -60,8 +60,8 @@
 
 
   <div id='shopping_cart'>
-    <i class="fa fa-shopping-cart"></i>
-    <b>4</b>
+    <p>Your Items:</p>
+    <b>0</b>
   </div>
  </div>
     <!-- New Item -->
