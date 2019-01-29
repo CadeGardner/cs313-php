@@ -50,8 +50,9 @@
       background-color: #A99C90;
     }
 
-    img {
-      background-color: transparent;
+    .items {
+      margin-top: 15px;
+      align-items: center;
     }
 
     </style>
@@ -60,7 +61,7 @@
 <div class="container">
 
 
-<div class="row">
+<div class="row" class="items">
   <div class="col">
 
     <div id='shopping_cart'>
@@ -75,7 +76,7 @@
 
     <div class="row">
     <!-- New Item -->
-    <div class="col-sm-3" id="item1">
+    <div class="col-sm-3" class="items" id="item1">
 
       <h2>Nordic Axe</h2>
       <!-- Image -->
@@ -96,7 +97,7 @@
     </div>
 
     <!-- New Item -->
-    <div class="col-sm-3" id="item2">
+    <div class="col-sm-3" class="items" id="item2">
 
       <h2>Nordic Double Headed Axe</h2>
       <!-- Image -->
@@ -117,7 +118,7 @@
     </div>
 
       <!-- New Item -->
-      <div class="col-sm-3" id="item3">
+      <div class="col-sm-3" class="items" id="item3">
 
         <h2>Nordic Shield</h2>
         <!-- Image -->
@@ -138,7 +139,7 @@
 
       </div>
         <!-- New Item -->
-        <div class="cols-sm-3" id="item4">
+        <div class="cols-sm-3" class="items" id="item4">
 
           <h2 >Nordic Sword</h2>
           <!-- Image -->
