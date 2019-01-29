@@ -28,6 +28,28 @@ $zip = htmlspecialchars($_POST['zip']);
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <style media="screen">
+    body{
+      background-color: #A99C90;
+    }
+
+    #header {
+      background-color: #353535;
+      color: white;
+
+    }
+    button {
+      margin: 15px;
+      background-color: #353535;
+      color: white;
+      border-radius: 6px;
+    }
+
+    #buttons {
+      max-width: 30%;
+      margin:auto;
+    }
+    </style>
   </head>
   <body>
     <div class="jumbotron">
@@ -36,21 +58,23 @@ $zip = htmlspecialchars($_POST['zip']);
     <?php
 
     for($i = 0; $i < count($_SESSION['src']); $i++){
-    echo"<div><img src='".$_SESSION['src'][$i]."'>";
-    echo "<p>".$_SESSION['name'][$i]."</p>";
+    echo"<div class='container' class='cartItems'>";
+    echo "<div class='row'><p>".$_SESSION['name'][$i]."</p><br>";
     echo "<p>".$_SESSION['price'][$i]."</p></div>";
+    echo"<div class='row'><img src='".$_SESSION['src'][$i]."'></div></div>";
     }
 
      ?>
 
     <h4>Your Items have been sent to:</h4>
     <?php
-      echo "<div class=''> $firstName $lastName";
-      echo "$street";
-      echo "$city";
-      echo "$state";
+      echo "<div class='container'> <br> $firstName $lastName <br>";
+      echo "$street<br>";
+      echo "$city<br>";
+      echo "$state<br>";
       echo "$zip </div>";
 
     ?>
+  </div>
   </body>
 </html>
