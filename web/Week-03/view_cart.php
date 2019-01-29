@@ -38,26 +38,37 @@
     </script>
   </head>
   <body>
-<h1>This is your cart!!</h1>
+    <div class="container-fluid" id="header">
+      <h1>This is your cart!!</h1>
+    </div>
+
+    <div class="container">
+
 
     <?php
       echo"<div class='cartContainer' id='cartItems'>";
       for($i = 0; $i < count($_SESSION['src']); $i++){
-      echo"<div><img src='".$_SESSION['src'][$i]."'>";
+      echo"<div class='row'><img src='".$_SESSION['src'][$i]."'>";
       echo "<p>".$_SESSION['name'][$i]."</p>";
       echo "<p>".$_SESSION['price'][$i]."</p>";
-      echo " <button type='button' id='button".$i."' onclick='remove($i)'>
+      echo " <button type='button' class='button".$i."' onclick='remove($i)'>
       Remove Item
-      </button></div>";
+      </button></div></div>";
       }
      ?>
-     <a href="browse.php">
-       <button type="button" name="button">Back to Browse</button>
-     </a>
 
-     <a href="checkout.php">
-       <button type="button" name="button">Proceed to checkout</button>
-     </a>
+     <div class="row">
+       <a href="browse.php">
+         <button type="button" name="button">Back to Browse</button>
+       </a>
+
+       <a href="checkout.php">
+         <button type="button" name="button">Proceed to checkout</button>
+       </a>
+
+     </div>
+  </div>
+
 
   </body>
 </html>
