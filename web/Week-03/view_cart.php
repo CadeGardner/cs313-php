@@ -42,7 +42,7 @@
       <h1>This is your cart!!</h1>
     </div>
 
-    <div class="container">
+    <div class="p-2 border container">
 
 
     <?php
