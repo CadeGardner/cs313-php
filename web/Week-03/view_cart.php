@@ -77,11 +77,11 @@
      ?>
 
      <div class="row">
-       <div class="col-sm-5">
+       <div class="col-sm-5" class="d-flex flex-row-reverse">
          <a href="browse.php">
            <button type="button" name="button">Back to Browse</button>
          </a>
-       
+
          <a href="checkout.php">
            <button type="button" name="button">Proceed to checkout</button>
          </a>
