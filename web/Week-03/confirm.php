@@ -30,7 +30,7 @@ $zip = htmlspecialchars($_POST['zip']);
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
     <style media="screen">
     body{
-      background-color: #A99C90;
+      background-color: #353535;
     }
 
     #header {
