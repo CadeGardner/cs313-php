@@ -42,28 +42,28 @@
     <div class="address">
       <form action="confirm.php" method="post">
         <h1>Please Enter Your Address</h1>
-        <div class="form-control">
-          <input type="text" name="fname" placeholder="First Name">
+        <div class="form-group">
+          <input type="text" class="form-control" name="fname" placeholder="First Name">
         </div>
 
-        <div class="form-control">
-          <input type="text" name="lname" placeholder="Last Name">
+        <div class="form-group">
+          <input type="text" class="form-control" name="lname" placeholder="Last Name">
         </div>
 
-         <div class="form-control">
-             <input type="text" name="street" placeholder="Address Line 1 ">
+         <div class="form-group">
+             <input type="text" class="form-control" name="street" placeholder="Address Line 1 ">
          </div>
 
-         <div class="form-control">
-           <input type="text" name="city" placeholder="City">
+         <div class="form-group">
+           <input type="text" class="form-control" name="city" placeholder="City">
          </div>
 
-        <div class="form-control">
-          <input type="text" name="state" placeholder="State">
+        <div class="form-group">
+          <input type="text" class="form-control" name="state" placeholder="State">
         </div>
 
-        <div class="form-control">
-          <input type="text" name="zip" placeholder="Zip Code">
+        <div class="form-group">
+          <input type="text" class="form-control" name="zip" placeholder="Zip Code">
         </div>
 
 
