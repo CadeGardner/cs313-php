@@ -50,6 +50,10 @@
       background-color: #A99C90;
     }
 
+    img {
+      background: transparent;
+    }
+
     </style>
   </head>
   <body>
