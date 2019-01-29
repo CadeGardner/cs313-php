@@ -19,18 +19,38 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      function remove(item) {
+        var index = item;
+        $.ajax({
+          type:'post',
+          url:'remove.php',
+          data:{
+            index: index;
+          },
+          success: function(response) {
+            document.getElementById('cartItems').innerHTML = response;
+          }
 
+        });
+
+      }
+    </script>
   </head>
   <body>
 <h1>This is your cart!!</h1>
 
     <?php
-      echo"<div class='cartItems'>";
+      echo"<div class='cartContainer' id='cartItems'>";
       for($i = 0; $i < count($_SESSION['src']); $i++){
       echo"<img src='".$_SESSION['src'][$i]."'>";
       echo "<p>".$_SESSION['name'][$i]."</p>";
       echo "<p>".$_SESSION['price'][$i]."</p>";
+      echo " <button type='button' name='button' onclick='remove($i)'>
+         Remove Item
+       </button>";
       }
      ?>
+
   </body>
 </html>
