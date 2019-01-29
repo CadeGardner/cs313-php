@@ -30,10 +30,11 @@ $zip = htmlspecialchars($_POST['zip']);
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
   </head>
   <body>
+    <div class="jumbotron">
     <h2>Thank You for your Purchase of </h2>
 
     <?php
-    echo"<div class='cartContainer' id='cartItems'>";
+
     for($i = 0; $i < count($_SESSION['src']); $i++){
     echo"<div><img src='".$_SESSION['src'][$i]."'>";
     echo "<p>".$_SESSION['name'][$i]."</p>";
