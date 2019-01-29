@@ -10,5 +10,5 @@ if(isset($_POST['name'])) {
   exit();
 }
 
-  return count($_SESSION['name']);
+  echo count($_SESSION['name']);
 ?>
