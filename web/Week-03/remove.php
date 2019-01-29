@@ -2,7 +2,7 @@
 
 $index = $_POST['index'];
 
-for($i = 0; $i < $index; $i++;) {
+for($i = 0; $i < $index; $i++) {
   $source[$i] = $_SESSION['src'][$i];
   $name[$i] = $_SESSION['name'][$i];
   $price[$i] = $_SESSION['price'][$i];
