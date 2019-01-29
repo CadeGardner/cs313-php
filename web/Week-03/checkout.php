@@ -40,7 +40,7 @@
   <body>
 
     <div class="address">
-      <form class="form-group" action="confirm.php" method="post">
+      <form action="confirm.php" method="post">
         <h1>Please Enter Your Address</h1>
         <div class="form-control">
           <input type="text" name="fname" placeholder="First Name">
