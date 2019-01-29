@@ -37,7 +37,7 @@ unset($_SESSION['price'][$index]);
 // print_r(array_values($name));
 //echo print_r($_SESSION);
 
-for($i = 0; $i < $size); $i++){
+for($i = 0; $i < $size; $i++){
   if($i === $index) {
     continue;
  }

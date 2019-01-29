@@ -39,7 +39,7 @@
         }
 
       });
-      alert('function called and returned');
+      // alert('function called and returned');
       }
 
     </script>
