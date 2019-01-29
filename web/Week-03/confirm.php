@@ -30,7 +30,18 @@ $zip = htmlspecialchars($_POST['zip']);
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <h2>Thank You for your Purchase </h2>
+    <h2>Thank You for your Purchase of </h2>
+
+    <?php
+    echo"<div class='cartContainer' id='cartItems'>";
+    for($i = 0; $i < count($_SESSION['src']); $i++){
+    echo"<div><img src='".$_SESSION['src'][$i]."'>";
+    echo "<p>".$_SESSION['name'][$i]."</p>";
+    echo "<p>".$_SESSION['price'][$i]."</p></div>";
+    }
+
+     ?>
+
     <h4>Your Items have been sent to:</h4>
     <?php
       echo "<div class=''> $firstName $lastName";
