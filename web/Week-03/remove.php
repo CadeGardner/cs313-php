@@ -2,21 +2,31 @@
 
 $index = $_POST['index'];
 
-for($i = 0; $i < $index; $i++) {
-  $source[$i] = $_SESSION['src'][$i];
-  $name[$i] = $_SESSION['name'][$i];
-  $price[$i] = $_SESSION['price'][$i];
+// for($i = 0; $i < $index; $i++) {
+//   $source[$i] = $_SESSION['src'][$i];
+//   $name[$i] = $_SESSION['name'][$i];
+//   $price[$i] = $_SESSION['price'][$i];
+// }
+
+if($index == 0) {
+  array_shift($_SESSION['src'][]);
+  array_shift($_SESSION['name'][]);
+  array_shift($_SESSION['price'][]);
+
 }
 
+if($index != 0) {
 unset($_SESSION['src'][$index]);
 unset($_SESSION['name'][$index]);
 unset($_SESSION['price'][$index]);
-
-for($i = 0; $i < count($_SESSION['src']); $i++) {
-  $source[$i] = $_SESSION['src'][$i];
-  $name[$i] = $_SESSION['name'][$i];
-  $price[$i] = $_SESSION['price'][$i];
 }
+//
+// for($i = 0; $i < count($_SESSION['src']); $i++) {
+//   $source[$i] = $_SESSION['src'][$i];
+//   $name[$i] = $_SESSION['name'][$i];
+//   $price[$i] = $_SESSION['price'][$i];
+// }
+
 // foreach ($_SESSION['src'] as $value) {
 //
 // }
