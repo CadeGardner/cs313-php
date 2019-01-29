@@ -64,6 +64,11 @@
       margin-top: 3%;
     }
 
+    .normalButtons {
+      background-color: #353535;
+      color: white;
+    }
+
     </style>
   </head>
   <body>
@@ -102,7 +107,7 @@
       <input type="hidden" id="item1_name" value="Nordic Axe">
       <input type="hidden" id="item1_price" value="$75.00">
 
-      <button type="button" name="button" onclick="add_to_cart('item1')">
+      <button type="button" class="normalButtons" onclick="add_to_cart('item1')">
         Add to Cart
       </button>
 
@@ -123,7 +128,7 @@
       </div>
       <input type="hidden" id="item2_name" value="Nordic Double Headed Axe">
       <input type="hidden" id="item2_price" value="$105.00">
-      <button type="button" name="button" onclick="add_to_cart('item2')">
+      <button type="button" class="normalButtons" onclick="add_to_cart('item2')">
         Add to Cart
       </button>
 
@@ -145,7 +150,7 @@
         </div>
         <input type="hidden" id="item3_name" value="Nordic Shield">
         <input type="hidden" id="item3_price" value="$60.00">
-        <button type="button" name="button" onclick="add_to_cart('item3')">
+        <button type="button" class="normalButtons" onclick="add_to_cart('item3')">
           Add to Cart
         </button>
 
@@ -165,7 +170,7 @@
           </div>
           <input type="hidden" id="item4_name" value="Nordic Sword">
           <input type="hidden" id="item4_price" value="$55.00">
-          <button type="button" name="button" onclick="add_to_cart('item4')">
+          <button type="button" class="normalButtons" onclick="add_to_cart('item4')">
             Add to Cart
           </button>
         </div>
