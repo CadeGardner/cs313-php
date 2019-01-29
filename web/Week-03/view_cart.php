@@ -38,7 +38,15 @@
     </script>
 
     <style>
+        body{
+          background-color: #A99C90;
+        }
 
+        #header {
+          background-color: #353535;
+          color: white;
+
+        }
         button {
           margin: 15px;
         }
