@@ -1,7 +1,7 @@
 <?php   session_start();
 
 $index = $_POST['index'];
-
+$size = count($_SESSION['src'];
 // for($i = 0; $i < $index; $i++) {
 //   $source[$i] = $_SESSION['src'][$i];
 //   $name[$i] = $_SESSION['name'][$i];
@@ -35,10 +35,10 @@ unset($_SESSION['price'][$index]);
 // }
 // print_r(array_values($source));
 // print_r(array_values($name));
-echo print_r($_SESSION);
+//echo print_r($_SESSION);
 
-for($i = 0; $i < count($_SESSION['src']); $i++){
-  if($i == $index) {
+for($i = 0; $i < $size); $i++){
+  if($i === $index) {
     continue;
  }
  else
