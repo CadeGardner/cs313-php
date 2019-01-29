@@ -46,6 +46,10 @@
 
     <style media="screen">
 
+    body{
+      background-color: #A99C90;
+    }
+
     </style>
   </head>
   <body>
@@ -130,7 +134,7 @@
 
       </div>
         <!-- New Item -->
-        <div class="p-2 border align-self-stretch" id="item4">
+        <div class="cols-sm-3" id="item4">
 
           <h2 >Nordic Sword</h2>
           <!-- Image -->
