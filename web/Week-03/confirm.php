@@ -33,22 +33,6 @@ $zip = htmlspecialchars($_POST['zip']);
       background-color: #353535;
     }
 
-    #header {
-      background-color: #353535;
-      color: white;
-
-    }
-    button {
-      margin: 15px;
-      background-color: #353535;
-      color: white;
-      border-radius: 6px;
-    }
-
-    #buttons {
-      max-width: 30%;
-      margin:auto;
-    }
     </style>
   </head>
   <body>
