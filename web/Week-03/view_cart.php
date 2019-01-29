@@ -52,6 +52,11 @@
           background-color: #353535;
           color: white;
         }
+
+        #buttons {
+          max-width: 30%;
+          margin:auto;
+        }
     </style>
 
   </head>
@@ -77,7 +82,7 @@
      ?>
 
      <div class="row">
-       <div class="col-sm-5" class="d-flex flex-row-reverse">
+       <div class="col-sm-5" id="buttons">
          <a href="browse.php">
            <button type="button" name="button">Back to Browse</button>
          </a>
