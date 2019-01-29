@@ -130,7 +130,7 @@
 
       </div>
         <!-- New Item -->
-        <div class="col-sm-3" class="align-self-center" id="item4">
+        <div class="col-sm-3" class="align-self-stretch" id="item4">
 
           <h2 >Nordic Sword</h2>
           <!-- Image -->
