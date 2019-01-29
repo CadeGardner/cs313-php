@@ -24,17 +24,20 @@
   <body>
 
     <div class="address">
-      <form class="" action="index.html" method="post">
+      <form class="" action="confirm.php" method="post">
         <h1>Please Enter Your Address</h1>
-        <input type="text" name="" value="" placeholder="First Name"> <br>
-        <input type="text" name="" value="" placeholder="Last Name"> <br>
-        <input type="text" name="" value="" placeholder="Address Line 1 "> <br>
-        <input type="text" name="" value="" placeholder="City"> <br>
-        <input type="text" name="" value="" placeholder="State"> <br>
-        <input type="text" name="" value="" placeholder="Zip Code"> <br>
+        <input type="text" name="fname" value="" placeholder="First Name"> <br>
+        <input type="text" name="lname" value="" placeholder="Last Name"> <br>
+        <input type="text" name="street" value="" placeholder="Address Line 1 "> <br>
+        <input type="text" name="city" value="" placeholder="City"> <br>
+        <input type="text" name="state" value="" placeholder="State"> <br>
+        <input type="text" name="zip" value="" placeholder="Zip Code"> <br>
 
-        <button type="button" name="button"> Back to Cart </button>
-        <button type="button" name="button"> Purchase </button>
+        <a href="view_cart.php">
+          <button type="button" name="button"> Back to Cart </button>
+        </a>
+
+        <button type="submit" name="button"> Purchase </button>
 
       </form>
     </div>

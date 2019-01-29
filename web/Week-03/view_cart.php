@@ -51,6 +51,13 @@
       </button></div>";
       }
      ?>
+     <a href="browse.php">
+       <button type="button" name="button">Back to Browse</button>
+     </a>
+
+     <a href="checkout.php">
+       <button type="button" name="button">Proceed to checkout</button>
+     </a>
 
   </body>
 </html>

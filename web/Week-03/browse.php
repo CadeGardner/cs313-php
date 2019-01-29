@@ -53,7 +53,7 @@
   </head>
   <body>
 
-  <div class="">
+
     <a href="view_cart.php">
       <button type="button" name="button">View Cart</button>
     </a>
