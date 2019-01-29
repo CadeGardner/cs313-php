@@ -17,10 +17,12 @@ for($i = 0; $i < count($_SESSION['src']); $i++) {
   $name[$i] = $_SESSION['name'][$i];
   $price[$i] = $_SESSION['price'][$i];
 }
+foreach ($_SESSION['src'] as $value) {
 
+}
 print_r(array_values($source));
 print_r(array_values($name));
-echo print_r($_SESSION);
+//echo print_r($_SESSION);
 
 
 ?>
