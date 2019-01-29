@@ -24,7 +24,7 @@
   <body>
 
     <div class="address">
-      <form class="" action="confirm.php" method="post">
+      <form class="form-group" action="confirm.php" method="post">
         <h1>Please Enter Your Address</h1>
         <input type="text" name="fname" value="" placeholder="First Name"> <br>
         <input type="text" name="lname" value="" placeholder="Last Name"> <br>
