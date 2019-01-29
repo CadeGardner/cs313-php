@@ -43,14 +43,16 @@
     <?php
       echo"<div class='cartContainer' id='cartItems'>";
       for($i = 0; $i < count($_SESSION['src']); $i++){
-      echo"<img src='".$_SESSION['src'][$i]."'>";
+      echo"<div><img src='".$_SESSION['src'][$i]."'>";
       echo "<p>".$_SESSION['name'][$i]."</p>";
       echo "<p>".$_SESSION['price'][$i]."</p>";
-      echo " <button type='button' name='button' onclick='remove($i)'>
-         Remove Item
-       </button>";
+      echo " <button type='button' id='button".$i."' onclick='remove($i)'>
+      Remove Item
+      </button></div>";
       }
      ?>
-
+     <!-- echo " <button type='button' name='button' onclick='remove($i)'>
+        Remove Item
+      </button>"; -->
   </body>
 </html>
