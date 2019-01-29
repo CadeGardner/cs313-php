@@ -38,7 +38,7 @@ unset($_SESSION['price'][$index]);
 echo print_r($_SESSION);
 
 for($i = 0; $i < count($_SESSION['src']); $i++){
-  if($i == $index)) {
+  if($i == $index) {
     continue;
  }
  else
