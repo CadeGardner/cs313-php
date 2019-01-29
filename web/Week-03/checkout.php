@@ -26,7 +26,6 @@
         max-width: 60%;
         margin:auto;
       }
-      
     </style>
 
   </head>
@@ -39,23 +38,23 @@
           <input type="text" name="fname" value="" placeholder="First Name">
         </div>
 
-        <div class="form-group">
+        <div class="form-control">
           <input type="text" name="lname" value="" placeholder="Last Name">
         </div>
 
-         <div class="form-group">
+         <div class="form-control">
              <input type="text" name="street" value="" placeholder="Address Line 1 ">
          </div>
 
-         <div class="form-group">
+         <div class="form-control">
            <input type="text" name="city" value="" placeholder="City">
          </div>
 
-        <div class="form-group">
+        <div class="form-control">
           <input type="text" name="state" value="" placeholder="State">
         </div>
 
-        <div class="form-group">
+        <div class="form-control">
           <input type="text" name="zip" value="" placeholder="Zip Code">
         </div>
 
