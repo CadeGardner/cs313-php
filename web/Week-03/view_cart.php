@@ -26,7 +26,7 @@
           type:'post',
           url:'remove.php',
           data:{
-            index: index;
+            index: index
           },
           success: function(response) {
             document.getElementById('cartItems').innerHTML = response;
