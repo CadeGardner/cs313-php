@@ -56,6 +56,10 @@
 
     }
 
+    #cartButton {
+      margin-bottom: 20px;
+    }
+
     </style>
   </head>
   <body>
@@ -69,7 +73,7 @@
         </div>
 
         <a href="view_cart.php">
-        <button type="button" name="button">View Cart</button>
+        <button type="button" id ="cartButton">View Cart</button>
       </a>
 
     </div>
