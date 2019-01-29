@@ -35,7 +35,23 @@
         margin: 15px;
       }
     </style>
+    <style media="screen">
+    body{
+      background-color: #A99C90;
+    }
 
+    #header {
+      background-color: #353535;
+      color: white;
+
+    }
+    button {
+      margin: 15px;
+      background-color: #353535;
+      color: white;
+      border-radius: 6px;
+    }
+    </style>
   </head>
   <body>
 
