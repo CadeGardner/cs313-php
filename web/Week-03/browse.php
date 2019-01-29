@@ -59,9 +59,8 @@
     </a>
 
 
-  <div id='shopping_cart'>
+  <div id="shopping_cart">
     <h3>Your Items: 0 </h3>
-
   </div>
 
  </div>

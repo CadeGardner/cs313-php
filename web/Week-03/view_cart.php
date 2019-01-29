@@ -51,8 +51,6 @@
       </button></div>";
       }
      ?>
-     <!-- echo " <button type='button' name='button' onclick='remove($i)'>
-        Remove Item
-      </button>"; -->
+
   </body>
 </html>
