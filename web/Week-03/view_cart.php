@@ -49,7 +49,7 @@
       echo"<div class='container' class='cartItems'>";
       echo "<div class='row'><p>".$_SESSION['name'][$i]."</p><br>";
       echo "<p>".$_SESSION['price'][$i]."</p></div>";
-      echo"<div><img src='".$_SESSION['src'][$i]."'></div>";
+      echo"<div class='row'><img src='".$_SESSION['src'][$i]."'></div>";
 
       echo " <button type='button' class='button".$i."' onclick='remove($i)'>
       Remove Item
