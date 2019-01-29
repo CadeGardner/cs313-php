@@ -9,6 +9,6 @@ if(isset($_POST['name'])) {
   // print_r($_SESSION);
   exit();
 }
-  $numItems = count($_SESSION['name'])
+  $numItems = count($_SESSION['name']);
   echo "<h3> Your Items: $numItems";
 ?>
