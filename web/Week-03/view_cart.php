@@ -49,6 +49,8 @@
         }
         button {
           margin: 15px;
+          background-color: #353535;
+          color: white;
         }
     </style>
 
@@ -75,13 +77,18 @@
      ?>
 
      <div class="row">
-       <a href="browse.php">
-         <button type="button" name="button">Back to Browse</button>
-       </a>
+       <div class="col-sm-5">
+         <a href="browse.php">
+           <button type="button" name="button">Back to Browse</button>
+         </a>
+       </div>
 
-       <a href="checkout.php">
-         <button type="button" name="button">Proceed to checkout</button>
-       </a>
+       <div class="col-sm-5">
+         <a href="checkout.php">
+           <button type="button" name="button">Proceed to checkout</button>
+         </a>
+       </div>
+
 
      </div>
 
