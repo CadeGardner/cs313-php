@@ -35,7 +35,7 @@
           price: price
         },
         success: function(response) {
-          document.getElementById('shopping_cart').innerHTML = response;
+          document.shopping_cart.getElementsByTagName('b').innerHTML = response;
         }
 
       });
@@ -60,7 +60,8 @@
 
 
   <div id='shopping_cart'>
-
+    <i class="fa fa-shopping-cart"></i>
+    <b>4</b>
   </div>
  </div>
     <!-- New Item -->
@@ -127,7 +128,7 @@
 
       </div>
         <!-- New Item -->
-        <div class="items" id="item">
+        <div class="items" id="item4">
 
           <h2 >Nordic Sword</h2>
           <!-- Image -->
