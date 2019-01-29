@@ -20,6 +20,15 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 
+    <style media="screen">
+
+      form {
+        max-width: 60%;
+        margin:auto;
+      }
+      
+    </style>
+
   </head>
   <body>
 
