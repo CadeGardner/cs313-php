@@ -51,7 +51,7 @@
     }
 
     img {
-      background: transparent;
+      background-color: transparent;
     }
 
     </style>
