@@ -49,9 +49,9 @@
 
       for($i = 0; $i < count($_SESSION['src']); $i++){
       echo"<div class='row' class='cartItems'>";
-      echo "<p>".$_SESSION['name'][$i]."</p><br>";
-      echo "<p>".$_SESSION['price'][$i]."</p><br>";
-      echo"<img class='row' src='".$_SESSION['src'][$i]."'><br>";
+      echo "<div><p>".$_SESSION['name'][$i]."</p><br>";
+      echo "<p>".$_SESSION['price'][$i]."</p></div>";
+      echo"<div><img class='row' src='".$_SESSION['src'][$i]."'></div>";
 
       echo " <button type='button' class='button".$i."' onclick='remove($i)'>
       Remove Item
