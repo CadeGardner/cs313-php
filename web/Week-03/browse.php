@@ -35,7 +35,7 @@
           price: price
         },
         success: function(response) {
-          document.getElementById('cart_total').innerHTML = response;
+          document.getElementById('cart_total').value = response;
         }
 
       });
