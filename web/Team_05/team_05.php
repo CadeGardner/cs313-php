@@ -34,7 +34,7 @@
       //   $row['verse']."</span>".' - <br>'.$row['content'].'<br>';
       // }
       $user_book = $POST['book'];
-      $book = $db->prepare('SELECT * FROM scriptures WHERE book=:book');
+      $book = $db->prepare('SELECT * FROM scriptures WHERE book=\'John\'');
       $book->execute(array(':book'=> $user_book));
       while($row = $book->fetch(PDO::FETCH_ASSOC))
       {
