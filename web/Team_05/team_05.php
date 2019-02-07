@@ -38,7 +38,7 @@
       $book->execute(array(':book'=> $POST['book']));
       while($row = $book->fetch(PDO::FETCH_ASSOC))
       {
-        echo "<a href='details.php?scripture=".$row['id']."'><span style='font-weight: bold'>".
+        echo "<a href='details.php?book=".$row['id']."'><span style='font-weight: bold'>".
         $row['book'].' '.$row['chapter'].': '.
         $row['verse']."</span>".'</a><br>';
       }
