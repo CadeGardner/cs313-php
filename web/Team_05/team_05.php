@@ -33,15 +33,18 @@
       //   echo "<span style='font-weight: bold'>".$row['book'].' '.$row['chapter'].': '.
       //   $row['verse']."</span>".' - <br>'.$row['content'].'<br>';
       // }
+
+
       $user_book = $POST['book'];
-      $book = $db->prepare('SELECT * FROM scriptures WHERE book=\'John\'');
-      $book->execute(array(':book'=> $user_book));
-      while($row = $book->fetch(PDO::FETCH_ASSOC))
-      {
-        echo "<a href='details.php?book=".$row['id']."'>".
-        $row['book'].' '.$row['chapter'].': '.
-        $row['verse'].'</a><br>';
-      }
+      echo "ECHO : BOOK ->" . $user_book;
+      // $book = $db->prepare('SELECT * FROM scriptures WHERE book=\'John\'');
+      // $book->execute(array(':book'=> $user_book));
+      // while($row = $book->fetch(PDO::FETCH_ASSOC))
+      // {
+      //   echo "<a href='details.php?book=".$row['id']."'>".
+      //   $row['book'].' '.$row['chapter'].': '.
+      //   $row['verse'].'</a><br>';
+      // }
 
      ?>
   </body>
