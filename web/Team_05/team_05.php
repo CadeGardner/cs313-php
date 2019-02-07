@@ -13,7 +13,7 @@
       {
       $dbUrl = getenv('DATABASE_URL');
       $dbOpts = parse_url($dbUrl);
-      $book = $dbOpts["host"];
+      $dbHost = $dbOpts["host"];
       $dbPort = $dbOpts["port"];
       $dbUser = $dbOpts["user"];
       $dbPassword = $dbOpts["pass"];
