@@ -33,9 +33,9 @@
       //   echo "<span style='font-weight: bold'>".$row['book'].' '.$row['chapter'].': '.
       //   $row['verse']."</span>".' - <br>'.$row['content'].'<br>';
       // }
-
+      $user_book = $POST['book'];
       $book = $db->prepare('SELECT * FROM scriptures WHERE book=:book');
-      $book->execute(array(':book'=> $POST['book']));
+      $book->execute(array(':book'=> $user_book));
       while($row = $book->fetch(PDO::FETCH_ASSOC))
       {
         echo "<a href='details.php?book=".$row['id']."'><span style='font-weight: bold'>".
