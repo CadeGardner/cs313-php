@@ -6,5 +6,8 @@
   </head>
   <body>
     <h1>YOU MADE IT TO THE DETAILS PAGE</h1>
+    <?php
+        echo $_GET['book'];
+     ?>
   </body>
 </html>

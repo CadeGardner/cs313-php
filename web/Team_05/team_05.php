@@ -36,12 +36,12 @@
 
 
       $user_book = $_POST['book'];
-      echo "ECHO : BOOK ->" . $user_book;
+      // echo "ECHO : BOOK ->" . $user_book;
       $book = $db->prepare('SELECT * FROM scriptures WHERE book=:book');
       $book->execute(array(':book'=> $user_book));
       while($row = $book->fetch(PDO::FETCH_ASSOC))
       {
-        echo "<a href='details.php?book=".$row['id']."'>".
+        echo "<a href='details.php?book=".$row['content']."'>".
         $row['book'].' '.$row['chapter'].': '.
         $row['verse'].'</a><br>';
       }
