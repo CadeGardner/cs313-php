@@ -27,12 +27,20 @@
       die();
       }
 
-      $scripture = $db->query('SELECT * FROM scriptures');
+      // $scripture = $db->query('SELECT * FROM scriptures');
+      // while($row = $scripture->fetch(PDO::FETCH_ASSOC))
+      // {
+      //   echo "<span style='font-weight: bold'>".$row['book'].' '.$row['chapter'].': '.
+      //   $row['verse']."</span>".' - <br>'.$row['content'].'<br>';
+      // }
+
+      $book = $db->query('SELECT * FROM scriptures WHERE book = $POST["book"]')
       while($row = $scripture->fetch(PDO::FETCH_ASSOC))
       {
-        echo "<span style='font-weight: bold'>".$row['book'].$row['chapter'].':'.
-        $row['verse']."</span>".' - '.$row['content'].'<br>';
+        echo "<a href='details.php?scripture=$row['id']'><span style='font-weight: bold'>".$row['book'].' '.$row['chapter'].': '.
+        $row['verse']."</span>".'</a><br>';
       }
+
      ?>
   </body>
 </html>
