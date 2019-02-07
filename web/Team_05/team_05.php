@@ -37,7 +37,7 @@
 
       $user_book = $_POST['book'];
       echo "ECHO : BOOK ->" . $user_book;
-      $book = $db->prepare('SELECT * FROM scriptures WHERE book=\'John\'');
+      $book = $db->prepare('SELECT * FROM scriptures WHERE book=:book');
       $book->execute(array(':book'=> $user_book));
       while($row = $book->fetch(PDO::FETCH_ASSOC))
       {
