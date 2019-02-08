@@ -41,6 +41,8 @@
       $book->execute(array(':book'=> $user_book));
       while($row = $book->fetch(PDO::FETCH_ASSOC))
       {
+        //content could be id then do a where query on the details
+        // page. 
         echo "<a href='details.php?book=".$row['content']."'>".
         $row['book'].' '.$row['chapter'].': '.
         $row['verse'].'</a><br>';
