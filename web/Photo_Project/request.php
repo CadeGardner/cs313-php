@@ -7,7 +7,8 @@
   <body>
     <form class="" action="index.html" method="post">
       <input type="text" name="username" value="" placeholder="Username">
-      <input type="datetime-local" name="" value="">
+      <input type="date" name="" value="" placeholder="mm/dd/yyyy">
+      <input type="time" name="" value="">
       <select class="" name="time">
 
         <?php
