@@ -6,10 +6,10 @@
   </head>
   <body>
     <form class="" action="index.html" method="post">
-      <input type="text" name="book" value=""placeholder="book">
-      <input type="text" name="chapter" value=""placeholder="chapter">
-      <input type="text" name="verse" value=""placeholder="verse">
-      <textarea name="content" rows="8" cols="80"placeholder="content"></textarea>
+      <input type="text" name="book" value=""placeholder="book"><br>
+      <input type="text" name="chapter" value=""placeholder="chapter"><br>
+      <input type="text" name="verse" value=""placeholder="verse"><br>
+      <textarea name="content" rows="8" cols="80"placeholder="content"></textarea><br>
 
       <?php
       try
@@ -35,7 +35,7 @@
       {
         $id = $row['id'];
         $label = $row['name'];
-        echo "<input type='checkbox' name='topics[]' value='$id'><br>";
+        echo "$label<input type='checkbox' name='topics[]' value='$id'><br>";
       }
       ?>
 
