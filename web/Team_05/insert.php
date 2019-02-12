@@ -23,6 +23,8 @@ $chapter = $_POST['chapter'];
 $verse = $_POST['verse'];
 $content = $_POST['content'];
 
+var_dump($content);
+
 $topic[] = $_POST['topics'];
 
 $db->query('INSERT INTO scriptures (book, chapter, verse, content) VALUES
