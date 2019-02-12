@@ -33,11 +33,11 @@
       $topic = $db->query('SELECT name FROM topic');
       while($row = $topic->fetch(PDO::FETCH_ASSOC))
       {
-        echo"<input type='checkbox' name='$topic' value=''><br>";
+        echo"<input type='checkbox' name='topics[]' value='$topic'><br>";
       }
       ?>
 
-      <button type="submit" name="button" value="">INSERT</button>
+      <button type="submit" name="button" value="Insert">INSERT</button>
     </form>
   </body>
 </html>
