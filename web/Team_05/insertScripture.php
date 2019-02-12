@@ -33,7 +33,8 @@
       $topic = $db->query('SELECT * FROM topic');
       while($row = $topic->fetch(PDO::FETCH_ASSOC))
       {
-        echo "<input type='checkbox' name='topics[]' value='$row[\"id\"]'><br>";
+        $id = $row['id'];
+        echo "$row['name']<input type='checkbox' name='topics[]' value='$id'><br>";
       }
       ?>
 
