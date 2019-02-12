@@ -7,6 +7,17 @@ CREATE TABLE scriptures
   content        TEXT               NOT NULL
   );
 
+  CREATE TABLE topic (
+    id           SERIAL             PRIMARY KEY,
+    name         VARCHAR(100)       NOT NULL
+    );
+
+CREATE TABLE scriptures_topic (
+  id             SERIAL            PRIMARY KEY,
+  topic_id       INT               REFERENCES topic(id),
+  scriptures_id  INT               REFERENCES scriptures(id)
+  );
+
 INSERT INTO scriptures (book, chapter, verse, content) VALUES
 ('John', 1, 5,
  'And the alight shineth in darkness; and the darkness comprehended it not.'),
@@ -25,6 +36,7 @@ until he is glorified in truth and knoweth all things.'),
 that can never be darkened; yea, and also a life which is endless,
 that there can be no more death.');
 
-
-
-  
+INSERT INTO topic (name) VALUES
+('Faith'),
+('Sacrifice'),
+('Charity');
