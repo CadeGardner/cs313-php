@@ -24,17 +24,23 @@ $verse = $_POST['verse'];
 $content = $_POST['content'];
 
 var_dump($content);
-
+$query = 'INSERT INTO scriptures (book, chapter, verse, content) VALUES
+(:book , :chapter, :verse, :content)';
+$statement = $db->prepare($query);
 $topic[] = $_POST['topics'];
 
-$db->query('INSERT INTO scriptures (book, chapter, verse, content) VALUES
-($book , $chapter, $verse, $content)');
+$statement->bindValue(':book', $book);
+$statement->bindValue(':chapter', $chapter);
+$statement->bindValue(':verse', $verse);
+$statement->bindValue(':content', $content);
+
+$statement->execute();
 
 $newScriptureId = $db->lastInsertId('scriptures_id_seq');
 
 foreach($topic as $t){
-$db->query('INSERT INTO scriptures_topic (topic_id, scriptures_id) VALUES
-($t, $newScriptureId)
-');
+$db->query("INSERT INTO scriptures_topic (topic_id, scriptures_id) VALUES
+('$t', '$newScriptureId')
+");
 }
  ?>
