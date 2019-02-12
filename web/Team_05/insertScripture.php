@@ -5,7 +5,7 @@
     <title>Read Yo Scriptures!!</title>
   </head>
   <body>
-    <form class="" action="index.html" method="post">
+    <form class="" action="insert.php" method="post">
       <input type="text" name="book" value=""placeholder="book"><br>
       <input type="text" name="chapter" value=""placeholder="chapter"><br>
       <input type="text" name="verse" value=""placeholder="verse"><br>
