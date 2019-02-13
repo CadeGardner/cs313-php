@@ -5,7 +5,7 @@
     <title>Request Appointment</title>
   </head>
   <body>
-    <form class="" action="index.html" method="post">
+    <form class="" action="appt_display.php" method="post">
       <input type="text" name="username" value="" placeholder="Username"><br>
       <input type="date" name="" value="" placeholder="mm/dd/yyyy"><br>
       <select class="" name="time">
@@ -38,7 +38,9 @@
         <option value="engagements">Engagements</option>
         <option value="wedding">Wedding</option>
       </select><br>
-      <button type="submit" name="request">Request</button><br>
+      <button type="submit" name="request">Request</button>
+      <a href="appt_display.php"><button type="button" name="button">
+      View Calendar</button></a><br>
     </form>
   </body>
 </html>
