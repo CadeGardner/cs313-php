@@ -12,8 +12,8 @@
       <select class="" name="time">
 
         <?php
-        $start = "11:00";
-        $end = "13:30";
+        $start = "8:00";
+        $end = "19:00";
 
         $tStart = strtotime($start);
         $tEnd = strtotime($end);
