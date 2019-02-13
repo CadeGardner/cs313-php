@@ -8,7 +8,6 @@
     <form class="" action="index.html" method="post">
       <input type="text" name="username" value="" placeholder="Username">
       <input type="date" name="" value="" placeholder="mm/dd/yyyy">
-      <input type="time" name="" value="">
       <select class="" name="time">
 
         <?php
@@ -25,6 +24,11 @@
           $tNow = strtotime('+30 minutes',$tNow);
         }
         ?>
+      </select>
+
+      <select class="" name="timeframe">
+        <option value="am">a.m.</option>
+        <option value="pm">p.m.</option>
       </select>
 
       <select class="" name="package">
