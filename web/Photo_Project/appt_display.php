@@ -6,6 +6,7 @@ $appointment = $db->prepare("SELECT appointment, user_id,
   calendar_id, package_id, message_id FROM appointment");
 $appointment->execute();
 // Go through each result
+echo "Testing"; 
 while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 {
 	// The variable "row" now holds the complete record for that
