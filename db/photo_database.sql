@@ -21,7 +21,7 @@ CREATE TABLE package
 CREATE TABLE calendar
 (
   id            SERIAL           PRIMARY KEY,
-  date          DATE             NOT NULL
+  appt          DATE             NOT NULL
 );
 
 CREATE TABLE instant_message
@@ -34,9 +34,37 @@ CREATE TABLE instant_message
 CREATE TABLE appointment
 (
   id            SERIAL           PRIMARY KEY,
-  appointment   TIME             ,
+  appointment   TIME(4)          NOT NULL,
   user_id       INT              NOT NULL          REFERENCES client(id),
   calendar_id   INT              NOT NULL          REFERENCES calendar(id),
   package_id    INT              NOT NULL          REFERENCES package(id),
   message_id    INT              NOT NULL          REFERENCES message(id)
 );
+
+INSERT INTO client (name, password) VALUES
+('cgardner', 'bob'),
+('bgardner', 'spaghetti'),
+('pdiddy', 'irock'),
+('fitz','password');
+
+INSERT INTO package (name, description) VALUES
+('Gold', '3 hours of photos in multiple locations'),
+('Silver', '1.5 hours of photos in a single location'),
+('Basic', '45 minutes of photos in a single location');
+
+INSERT INTO calendar(appt) VALUES
+('2019-02-13'),
+('2019-03-18'),
+('2019-01-29'),
+('2019-05-15');
+
+INSERT INTO message (message)
+VALUES
+('Just wondering what kind of Camera you use?'),
+('Do you have any location reccommendations?');
+
+INSERT INTO appointment(appointment, user_id, calendar_id, package_id, message_id)
+VALUES
+('12:30', 1, 2, 2, 1),
+('1:00', 3, 1, 1, 2),
+('8:30', 4, 3, 3, 1);
