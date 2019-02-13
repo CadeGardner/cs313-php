@@ -24,7 +24,7 @@
           $tNow = strtotime('+30 minutes',$tNow);
         }
         ?>
-      </select><br>
+      </select>
 
       <select class="" name="timeframe">
         <option value="am">a.m.</option>
