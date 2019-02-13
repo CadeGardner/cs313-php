@@ -3,9 +3,9 @@
   $db = get_db();
 
 $appointment = $db->prepare("SELECT * FROM appointment a
-JOIN client c ON c.id = a.user_id
-JOIN calendar cal ON cal.id = a.calendar_id
-JOIN package p ON p.id = a.package_id");
+JOIN client c ON 'c.id = a.user_id'
+JOIN calendar cal ON 'cal.id = a.calendar_id'
+JOIN package p ON 'p.id = a.package_id'");
 
 
 // SELECT appointment, user_id,
