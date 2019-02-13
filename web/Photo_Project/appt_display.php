@@ -2,7 +2,7 @@
   require "db_connect.php";
   $db = get_db();
 
-$appointment = $db->prepare("SELECT appointment, name, appt ,description
+$appointment = $db->prepare("SELECT appointment, name, appt, package
 FROM appointment a
 JOIN client c ON c.id = a.user_id
 JOIN calendar cal ON cal.id = a.calendar_id
@@ -22,7 +22,7 @@ while ($row = $appointment->fetch(PDO::FETCH_ASSOC))
 	$d_username = $row['name'];
 	$d_time = $row['appointment'];
 	$d_date = $row['appt'];
-	$d_package = $row['description'];
+	$d_package = $row['package'];
 	echo "<div>$d_username<br> $d_time<br> $d_date<br>$d_package</div>";
 }
  ?>

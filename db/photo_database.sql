@@ -14,7 +14,7 @@ CREATE TABLE message
 CREATE TABLE package
 (
   id            SERIAL           PRIMARY KEY,
-  name          VARCHAR(45)      NOT NULL,
+  package       VARCHAR(45)      NOT NULL,
   description   TEXT             NOT NULL
 );
 
@@ -47,7 +47,7 @@ INSERT INTO client (name, password) VALUES
 ('pdiddy', 'irock'),
 ('fitz','password');
 
-INSERT INTO package (name, description) VALUES
+INSERT INTO package (package, description) VALUES
 ('Gold', '3 hours of photos in multiple locations'),
 ('Silver', '1.5 hours of photos in a single location'),
 ('Basic', '45 minutes of photos in a single location');
