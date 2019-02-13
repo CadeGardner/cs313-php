@@ -1,12 +1,12 @@
 <?php
-  require "dbConnect.php";
+  require "db_connect.php";
   $db = get_db();
 
 $appointment = $db->prepare("SELECT appointment, user_id,
   calendar_id, package_id, message_id FROM appointment");
 $appointment->execute();
 // Go through each result
-echo "Testing"; 
+echo "Testing";
 while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 {
 	// The variable "row" now holds the complete record for that
