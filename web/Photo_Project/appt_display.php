@@ -8,7 +8,10 @@ JOIN client c ON c.id = a.user_id
 JOIN calendar cal ON cal.id = a.calendar_id
 JOIN package p ON p.id = a.package_id");
 
-
+echo"<div><p>This will eventually be displayed on a calendar to make it look<br>
+     much nicer but each gropuing shows the basic info of a client's <br>
+     appointments. 
+    ";
 // SELECT appointment, user_id,
 // calendar_id, package_id, message_id FROM appointment
 $appointment->execute();
