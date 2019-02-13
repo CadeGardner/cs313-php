@@ -6,8 +6,8 @@
   </head>
   <body>
     <form class="" action="index.html" method="post">
-      <input type="text" name="username" value="" placeholder="Username">
-      <input type="date" name="" value="" placeholder="mm/dd/yyyy">
+      <input type="text" name="username" value="" placeholder="Username"><br>
+      <input type="date" name="" value="" placeholder="mm/dd/yyyy"><br>
       <select class="" name="time">
 
         <?php
@@ -24,12 +24,12 @@
           $tNow = strtotime('+30 minutes',$tNow);
         }
         ?>
-      </select>
+      </select><br>
 
       <select class="" name="timeframe">
         <option value="am">a.m.</option>
         <option value="pm">p.m.</option>
-      </select>
+      </select><br>
 
       <select class="" name="package">
         <option value="family">Family</option>
@@ -37,8 +37,8 @@
         <option value="sports">Sports</option>
         <option value="engagements">Engagements</option>
         <option value="wedding">Wedding</option>
-      </select>
-      <button type="submit" name="request">Request</button>
+      </select><br>
+      <button type="submit" name="request">Request</button><br>
     </form>
   </body>
 </html>
