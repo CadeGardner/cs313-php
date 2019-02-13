@@ -9,6 +9,7 @@ $appointment->execute();
 echo "Testing";
 while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 {
+  echo"looping";
 	// The variable "row" now holds the complete record for that
 	// row, and we can access the different values based on their
 	// name
