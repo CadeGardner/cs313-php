@@ -7,7 +7,7 @@ $appointment = $db->prepare("SELECT appointment, user_id,
 $appointment->execute();
 // Go through each result
 echo "Testing";
-while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+while ($row = $appointment->fetch(PDO::FETCH_ASSOC))
 {
   echo"looping";
 	// The variable "row" now holds the complete record for that
