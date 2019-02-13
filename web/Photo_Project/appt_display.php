@@ -15,6 +15,6 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 	$d_time = $row['appointment'];
 	$d_date = $row['calendar_id'];
 	$d_package = $row['package_id'];
-	echo "<p><strong>$book $chapter:$verse</strong> - \"$content\"<p>";
+	echo "<div>$d_username<br> $d_time<br> $d_date<br>$d_package</div>";
 }
  ?>
