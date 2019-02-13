@@ -12,14 +12,15 @@
       <li><a href="request.php">Request Appointment</a></li>
       <li><a href="about_me.php">About Me</a></li>
       <li><a href="contact.php">Contact Me</a></li>
+      <li><a href="login.php">Login</a></li>
     </ul>
 
     <div class="">
-      <p>pagination to go here</p>
+      <p>pagination will go here</p>
     </div>
 
     <div class="">
-      <p>photo philosophy to go here</p>
+      <p>photo philosophy will go here</p>
     </div>
 
   </body>

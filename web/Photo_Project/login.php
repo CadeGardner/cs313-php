@@ -7,8 +7,8 @@
   <body>
     <div class="">
       <form class="" action="index.html" method="post">
-        <input type="text" name="username" value="">
-        <input type="password" name="password" value="">
+        <input type="text" name="username" value=""><br>
+        <input type="password" name="password" value=""><br>
         <button type="submit" name="login">Login</button>
       </form>
     </div>
