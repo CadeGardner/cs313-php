@@ -25,7 +25,7 @@
           $name = $course['course_name'];
           $course_code = $course['course_code'];
           echo "<li> $name - $course_code</li>\n";
-        }
+        };
        ?>
       <li></li>
       <li></li>
