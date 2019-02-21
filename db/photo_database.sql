@@ -2,7 +2,8 @@ CREATE TABLE client
 (
   id            SERIAL           PRIMARY KEY,
   name          VARCHAR(100)     NOT NULL,
-  password      VARCHAR(60)      NOT NULL
+  password      VARCHAR(60)      NOT NULL,
+  client_type   VARCHAR(15)      NOT NULL       DEFAULT 'user'
 );
 
 CREATE TABLE message
