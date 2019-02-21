@@ -1,3 +1,6 @@
+<?php
+  session_start();
+ ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -5,9 +8,9 @@
     <title>Request Appointment</title>
   </head>
   <body>
-    <form class="" action="appt_display.php" method="post">
-      <input type="text" name="username" value="" placeholder="Username"><br>
-      <input type="date" name="" value="" placeholder="mm/dd/yyyy"><br>
+    <form class="" action="log_appt.php" method="post">
+      <!-- <input type="text" name="username" value="" placeholder="Username"><br> -->
+      <input type="date" name="appt" value="" placeholder="mm/dd/yyyy"><br>
       <select class="" name="time">
 
         <?php

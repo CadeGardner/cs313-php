@@ -15,11 +15,26 @@
       <li><a href="login.php">Login</a></li>
     </ul>
 
-    <div class="">
-      <p>pagination will go here</p>
+    <!-- Carousel Portfolio -->
+    <div class="carousel">
+
+      <!-- The Slide Show -->
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+            <img src="" alt="">
+        </div>
+
+        <div class="carousel-item">
+          <img src="" alt="">
+        </div>
+
+      </div>
+
     </div>
 
-    <div class="">
+
+    <div class="jumbotron-fluid">  <!-- Maybe Modify this style some... -->
       <p>photo philosophy will go here</p>
     </div>
 

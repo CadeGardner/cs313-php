@@ -68,3 +68,6 @@ VALUES
 ('12:30', 1, 2, 2, 1),
 ('1:00', 3, 1, 1, 2),
 ('8:30', 4, 3, 3, 1);
+
+
+ALTER TABLE client ADD COLUMN client_type VARCHAR(10) NOT NULL DEFAULT 'user';

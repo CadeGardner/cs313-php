@@ -1,4 +1,6 @@
-<?php  function get_db() {
+<?php
+
+function get_db() {
 	$db = NULL;
 	try {
 		// default Heroku Postgres configuration URL
