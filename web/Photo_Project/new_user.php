@@ -28,6 +28,6 @@ $statement->bindValue(':password', $hashedPassword);
 $statement->execute();
 
 flush();
-header("Location: signIn.php");
+header("Location: login.php");
 die();
 ?>
