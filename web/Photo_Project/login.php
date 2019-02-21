@@ -22,6 +22,7 @@ if (isset($_POST['client']) && isset($_POST['txtPassword']))
 		if (password_verify($password, $hashedPasswordFromDB))
 		{
 			$_SESSION['username'] = $username;
+			flush();
 			header("Location: home.php");
 			die();
 		}
