@@ -1,7 +1,10 @@
 <?php
 echo "NEW_USER.PHP";
+
 $client_name = $_POST['client'];
+echo "$client_name";
 $password = $_POST['txtPassword'];
+echo "$password";
 if (!isset($client_name) || $client_name == ""
 	|| !isset($password) || $password == "")
 {
