@@ -1,4 +1,5 @@
 <?php
+require("db_connect.php");
 echo "NEW_USER.PHP";
 
 $client_name = $_POST['client'];
@@ -17,7 +18,7 @@ $client_name = htmlspecialchars($client_name);
 
 $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
-require("db_connect.php");
+
 $db = get_db();
 echo "$db";
 $query = 'INSERT INTO client(name, password, user) VALUES(:client_name, :password)';
