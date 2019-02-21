@@ -1,8 +1,8 @@
 <?php
-
+echo "NEW_USER.PHP";
 $client_name = $_POST['client'];
 $password = $_POST['txtPassword'];
-if (!isset($username) || $username == ""
+if (!isset($client_name) || $client_name == ""
 	|| !isset($password) || $password == "")
 {
 	header("Location: register.php");
