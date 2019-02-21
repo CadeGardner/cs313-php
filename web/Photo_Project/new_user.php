@@ -30,3 +30,4 @@ flush();
 header("Location: signIn.php");
 die();
 ?>
+INSERT INTO client(name, password) VALUES(Jgordon, weedoo);
