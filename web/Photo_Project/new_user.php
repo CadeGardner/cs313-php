@@ -4,7 +4,7 @@ echo "NEW_USER.PHP";
 $client_name = $_POST['client'];
 echo "$client_name";
 $password = $_POST['txtPassword'];
-echo "$password";
+echo "$password <br>";
 if (!isset($client_name) || $client_name == ""
 	|| !isset($password) || $password == "")
 {
@@ -19,6 +19,7 @@ $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
 require("db_connect.php");
 $db = get_db();
+echo "$db";
 $query = 'INSERT INTO client(name, password, user) VALUES(:client_name, :password)';
 $statement = $db->prepare($query);
 $statement->bindValue(':client_name', $client_name);
