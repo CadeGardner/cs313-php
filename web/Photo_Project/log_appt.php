@@ -41,15 +41,17 @@ $package_row = $package_statement->fetch(PDO::FETCH_ASSOC);
 $package_id = $package_row['id'];
 
 //echo "Package id is: $package_id";
+$message_id = 1;
 
 $time_query = 'INSERT INTO appointment (appointment, user_id, calendar_id, package_id, message_id)
-VALUES (:appointment, :user_id, :calendar_id, :package_id, '1')';
+VALUES (:appointment, :user_id, :calendar_id, :package_id, :message_id)';
 
 $statement = $db->prepare($time_query);
 $statement->bindValue(':user_id', $user_id);
 $statement->bindValue(':calendar_id', $calendar_id);
 $statement->bindValue(':appointment', $time);
 $statement->bindValue(':package_id', $package_id);
+$statement->bindValue(':message_id', $message_id);
 $statement->execute();
 
 flush();
