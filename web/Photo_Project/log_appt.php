@@ -42,13 +42,13 @@ $package_id = $package_row['id'];
 
 //echo "Package id is: $package_id";
 
-$time_query = 'INSERT INTO appointment(time, user_id, calendar_id, package_id, message_id)
-VALUES (:time, :user_id, :calendar_id, :package_id, 1)';
+$time_query = 'INSERT INTO appointment(appointment, user_id, calendar_id, package_id, message_id)
+VALUES (:appointment, :user_id, :calendar_id, :package_id, 1)';
 
 $statement = $db->prepare($time_query);
 $statement->bindValue(':user_id', $user_id);// need to edit bindValues
 $statement->bindValue(':calendar_id', $calendar_id);
-$statement->bindValue(':time', $time);
+$statement->bindValue(':appointment', $time);
 $statement->bindValue(':package_id', $package_id);
 $statement->execute();
 
