@@ -35,11 +35,11 @@
       </select><br>
 
       <select class="" name="package">
-        <option value="family">Family</option>
-        <option value="dance">Dance</option>
-        <option value="sports">Sports</option>
-        <option value="engagements">Engagements</option>
-        <option value="wedding">Wedding</option>
+        <option value="Family">Family</option>
+        <option value="Dance">Dance</option>
+        <option value="Sports">Sports</option>
+        <option value="Engagements">Engagements</option>
+        <option value="Wedding">Wedding</option>
       </select><br>
       <button type="submit" name="request">Request</button>
       <a href="appt_display.php"><button type="button" name="button">

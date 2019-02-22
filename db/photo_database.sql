@@ -49,9 +49,11 @@ INSERT INTO client (name, password) VALUES
 ('fitz','password');
 
 INSERT INTO package (package, description) VALUES
-('Gold', '3 hours of photos in multiple locations'),
-('Silver', '1.5 hours of photos in a single location'),
-('Basic', '45 minutes of photos in a single location');
+('Family', '1.5 hours of photos split between upto two locations'),
+('Dance', 'Photos for up to 12 couples'),
+('Sports', 'Induvidual and Team Photos'),
+('Engagements', '1.5 hours of photos in a two locations'),
+('Wedding', '2.5 hours of photos in a three locations');
 
 INSERT INTO calendar(appt) VALUES
 ('2019-02-13'),
