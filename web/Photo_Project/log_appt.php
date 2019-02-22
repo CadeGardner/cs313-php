@@ -15,16 +15,21 @@ $db = get_db();
 $client_query = 'SELECT id FROM client WHERE name = :client_name';
 $user_query = $db->prepare($client_query);
 $user_query->bindValue(':client_name', $username);
-$user_id = $user_query->execute();
+$user_query->execute();
+
+$user_row = $user_query->fetch(PDO::FETCH_ASSOC);
+$user_id = $user_row['id'];
 
 echo "User id is: $user_id <br>";
 
 $calendar_query = 'SELECT id FROM calendar WHERE  appt = :appt';
 $date_query = $db->prepare($calendar_query);
 $date_query->bindValue(':appt', $appt);
-$date_id = $date_query->execute();
+$date_query->execute();
+$date_row = $date_query->fetch(PDO::FETCH_ASSOC);
+$calendar_id = $calendar_row['id'];
 
-echo "Date id is: $date_id";
+echo "Date id is: $calendar_id";
 
 
 // $package_query = 'SELECT id FROM package WHERE  package = :package';
