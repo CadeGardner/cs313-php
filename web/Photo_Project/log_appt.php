@@ -5,6 +5,7 @@ $username = $_SESSION['username'];
 echo "Welcome: $username <br>";
 
 $appt = $_POST['appt'];
+echo "$appt<br>";
 $time = $_POST['time'];
 $package = $_POST['package'];
 $timeframe = $_POST['timeframe'];
