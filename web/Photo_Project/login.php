@@ -10,7 +10,7 @@ if (isset($_POST['client']) && isset($_POST['txtPassword']))
 
 	require("db_connect.php");
 	$db = get_db();
-	$query = 'SELECT password FROM login WHERE username=:username';
+	$query = 'SELECT password FROM client WHERE name=:username';
 	$statement = $db->prepare($query);
 	$statement->bindValue(':username', $username);
 	$result = $statement->execute();
