@@ -1,5 +1,5 @@
 <?php
-require("db_connect.php");
+require('db_connect.php');
 //echo "NEW_USER.PHP";
 
 $client_name = $_POST['client'];
