@@ -30,7 +30,7 @@ $date_statement->execute();
 $date_row = $date_statement->fetch(PDO::FETCH_ASSOC);
 $calendar_id = $date_row['id'];
 
-echo "Date id is: $calendar_id";
+echo "Date id is: $calendar_id <br>";
 
 
 $package_query = 'SELECT id FROM package WHERE  package = :package';
@@ -39,6 +39,8 @@ $package_statement->bindValue(':package', $package);
 $package_statement->execute();
 $package_row = $package_statement->fetch(PDO::FETCH_ASSOC);
 $package_id = $package_row['id'];
+
+echo "Package id is: $package_id";
 
 // $time_query = 'INSERT INTO appointment(time, user_id, calendar_id, package_id, message_id)';
 //
