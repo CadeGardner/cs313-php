@@ -24,7 +24,7 @@ $user_id = $user_row['id'];
 echo "User id is: $user_id <br>";
 
 $calendar_query = 'SELECT id FROM calendar WHERE  appt = :appt';
-$user_query = $db->prepare($calendar_query);
+$date_query = $db->prepare($calendar_query);
 $date_query->bindValue(':appt', $appt);
 $date_query->execute();
 $date_row = $date_query->fetch(PDO::FETCH_ASSOC);
