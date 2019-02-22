@@ -42,7 +42,7 @@ $package_id = $package_row['id'];
 
 //echo "Package id is: $package_id";
 $message_id = 1;
-
+echo "$time";
 $time_query = 'INSERT INTO appointment (appointment, user_id, calendar_id, package_id, message_id)
 VALUES (:appointment, :user_id, :calendar_id, :package_id, :message_id)';
 
