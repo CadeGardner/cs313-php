@@ -2,6 +2,8 @@
 session_start();
 $username = $_SESSION['username'];
 
+echo "Welcome: $username <br>";
+
 $appt = $_POST['appt'];
 $time = $_POST['time'];
 $package = $_POST['package'];
@@ -15,7 +17,7 @@ $user_query = $db->prepare($client_query);
 $user_query->bindValue(':client_name', $username);
 $user_id = $user_query->execute();
 
-echo "$user_id";
+echo "User id is: $user_id <br>";
 
 $calendar_query = 'SELECT id FROM calendar WHERE  appt = :appt';
 $date_query = $db->prepare($calendar_query);
@@ -37,6 +39,3 @@ echo "Date id is: $date_id";
 // $statement->execute();
 
  ?>
- user_id
- calendar_id
- package_id
