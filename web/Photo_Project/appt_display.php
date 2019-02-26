@@ -27,5 +27,42 @@ while ($row = $appointment->fetch(PDO::FETCH_ASSOC))
 	$d_package = $row['package'];
 	echo "<div>$d_username<br> $d_time<br> $d_date<br>$d_package</div><br>";
 }
-echo "Loop Finished";
- ?>
+
+?>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <script src="js/daypilot-all.min.js" type="text/javascript"></script>
+    <link type="text/css" rel="stylesheet" href="themes/month_white.css" />
+
+    <div id="dp"></div>
+
+    <script type="text/javascript">
+        var dp = new DayPilot.Month("dp");
+
+        // behavior and appearance
+        dp.cssClassPrefix = "month_white";
+
+        // view
+        dp.startDate = new DayPilot.Date("2013-07-01");  // or just dp.startDate = "2013-07-01";
+
+        var e = new DayPilot.Event({
+            start: "2013-03-25T00:00:00",
+            end: "2013-03-25T12:00:00",
+            id: DayPilot.guid(),
+            text: "Event"
+        });
+
+        dp.events.add(e);
+
+        dp.init();
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
