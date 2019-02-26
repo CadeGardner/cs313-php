@@ -42,7 +42,8 @@ while ($row = $appointment->fetch(PDO::FETCH_ASSOC))
         echo $calendar->show();
         echo "Pre total days being set";
         $num_days = $calendar->getTotalDays();
-        echo "Total Days: $num_days";
+        $num_month = $calendar->getCurrentMonth();
+        echo "<br>Total Days: $num_days <br> Current Month: $num_month";
      ?>
 
   </body>

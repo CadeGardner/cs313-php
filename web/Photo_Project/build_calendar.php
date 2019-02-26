@@ -222,4 +222,10 @@ class Calendar {
 
     }
 
+    public function getCurrentMonth(){
+
+      return $this->currentMonth;
+
+    }
+
 }
