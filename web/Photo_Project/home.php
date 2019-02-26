@@ -15,8 +15,8 @@
       height: 100%;
   }
 
-  .carousel-control-next-icon{
-    color: black;
+  .carousel-control-prev-icon{
+    background-color: black;
   }
   .container{
     max-width: 65%;
@@ -60,7 +60,7 @@
     </li>
   </ul>
 </nav>
-    
+
 
 
 <div class="container">
