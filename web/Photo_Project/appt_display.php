@@ -40,7 +40,7 @@ while ($row = $appointment->fetch(PDO::FETCH_ASSOC))
         require 'build_calendar.php';
         $calendar = new Calendar;
         echo $calendar->show();
-        $total_days = $calendar->_daysInMonth(null,null);
+        $total_days = $calendar->_daysInMonth();
         echo "Total Days: $total_days";
      ?>
 
