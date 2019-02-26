@@ -38,6 +38,10 @@
   .navbar{
     background-color: #3c6e71; /*teal*/
   }
+  #portfolio{
+    max-width: 65%;
+    margin: auto;
+  }
   </style>
 
     <script>
@@ -81,7 +85,7 @@
 </nav>
 
 
-<h2>Portfolio</h2>
+<h2 id="portfolio">Portfolio</h2>
 <div class="container">
     <!-- Carousel Portfolio -->
     <div class="carousel" id="myCarousel">
