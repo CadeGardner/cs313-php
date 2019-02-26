@@ -10,7 +10,7 @@ JOIN package p ON p.id = a.package_id");
 
 echo"<div><p>This will eventually be displayed on a calendar to make it look<br>
      much nicer but each gropuing shows the basic info of a client's <br>
-     appointments. 
+     appointments.
     ";
 // SELECT appointment, user_id,
 // calendar_id, package_id, message_id FROM appointment
@@ -27,4 +27,5 @@ while ($row = $appointment->fetch(PDO::FETCH_ASSOC))
 	$d_package = $row['package'];
 	echo "<div>$d_username<br> $d_time<br> $d_date<br>$d_package</div><br>";
 }
+echo "Loop Finished";
  ?>
