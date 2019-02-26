@@ -33,6 +33,10 @@
     $current_appt = $date_array['day'];
     $id = 'li-2019-'.$num_month.'-'.$current_appt;
 
+    $dom = new DOMDocument();
+    $dom->load("appt_display.php");
+    $dom->getElementById("$id")->innerHTML = "<div>$d_username<br> $d_time<br>
+                                              $d_date<br>$d_package</div><br>";
     // "<script type='text/javascript'>
     //  document.getElementById("$id")\.innerHTML =
     //  <div>$d_username<br> $d_time<br> $d_date<br>$d_package</div>
