@@ -49,7 +49,7 @@
 
     </div>
 
-  	<input class="btn button-info" type="submit" value="Create Account" />
+  	<input type="submit" class="btn button-info" value="Create Account" />
 
   </form>
 
