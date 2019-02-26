@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Allura|Parisienne|Open+Sans');
+/*universal*/
+* {
+    box-sizing: border-box;
+ }
+
+h1 {
+    font-size: 55px;
+    font-family: 'Allura', cursive;
+    color: #353535; /*dark gray*/
+}
+
+h2 {
+    font-size: 45px;
+    font-family: 'Allura', cursive;
+    color: #353535; /*dark gray*/
+}
+
+a{
+    font-size: 30px;
+    font-family: 'Allura', cursive;
+}
+
+p, li{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Logo Img */
+.logo {
+
+    margin-left: 20px;
+    max-width: 270px;
+    position: relative;
+    z-index: 1;
+    border-radius: 200px
+}
+
+.footer{
+    background-color: #3c6e71; /*teal*/
+}
+
+footer > div {
+    width: 100%;
+    padding: 15px;
+    background-color: #3c6e71; /*teal*/
+}
