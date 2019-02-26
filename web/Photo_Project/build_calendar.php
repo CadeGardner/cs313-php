@@ -213,4 +213,4 @@ class Calendar {
 }
 
 $calendar = new Calendar;
-$calendar->show();
+echo $calendar->show();
