@@ -5,7 +5,10 @@
     <title>Getting to Know Me</title>
   </head>
   <body>
-    <img class="img-fluid"src="myapproach.jpg" alt="elaine.jpg">
+    <div class="container">
+      <img class="img-fluid" src="myapproach.jpg" alt="elaine.jpg">
+    </div>
+
     <div class="jumbotron">
 
 
