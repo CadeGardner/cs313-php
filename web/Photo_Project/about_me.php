@@ -15,13 +15,13 @@
         background-color: #3c6e71; /*teal*/
       }
       .container{
-        max-height: 20%;
+        max-height: 10%;
       }
     </style>
 
   </head>
   <body>
-    h1>E Lewis Photography</h1>
+    <h1>E Lewis Photography</h1>
     <nav class="navbar navbar-expand-sm navbar-light">
   <ul class="navbar-nav">
     <li class="nav-item active">
