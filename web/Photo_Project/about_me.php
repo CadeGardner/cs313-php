@@ -5,9 +5,9 @@
     <title>Getting to Know Me</title>
   </head>
   <body>
-    <div class="">
-      <img src="#" alt="elaine.jpg">
-    </div>
+    <div class="jumbotron">
+      <img src="myapproach.jpg" alt="elaine.jpg">
+
 
     <h2>About Me</h2>
             <p>
@@ -32,8 +32,6 @@
                 really spectacular
                 </p>
             </div>
-    <div class="">
-      <p>photographer information here</p>
     </div>
   </body>
 </html>
