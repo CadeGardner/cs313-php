@@ -10,6 +10,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
+    <style media="screen">
+      button{
+        color: #3c6e71; /*teal*/
+      }
+    </style>
   </head>
   <body>
 
@@ -34,20 +39,26 @@
   </ul>
 </nav>
 
-    <form class="" action="index.html" method="post">
-      <div class="form-group">
-        <input type="text" name="name" value="" placeholder="Name">
-      </div>
-      <div class="form-group">
-        <input type="text" name="email" value="" placeholder="Email">
-      </div>
+<div class="container">
+  <form class="" action="index.html" method="post">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input id="name"type="text" name="name" value="" placeholder="Name">
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input id="email" type="text" name="email" value="" placeholder="Email">
+    </div>
 
-      <div class="form-group">
-        <textarea name="name" rows="15" cols="100" placeholder="Message">
-        </textarea>
-      </div>
+    <div class="form-group">
+      <label for="message">Message:</label>
+      <textarea id="message" name="name" rows="15" cols="100" placeholder="Message">
+      </textarea>
+    </div>
 
-      <button class="btn"type="submit" name="button">Send Message</button>
-    </form>
+    <button class="btn btn-outline-primary"type="submit" name="button">Send Message</button>
+  </form>
+</div>
+
   </body>
 </html>
