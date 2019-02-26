@@ -1,7 +1,7 @@
 div#calendar{
   margin:0px auto;
   padding:0px;
-  width: 70%;
+  width: 602px;
   font-family:Helvetica, "Times New Roman", Times, serif;
 }
 
@@ -10,23 +10,23 @@ div#calendar div.box{
     top:0px;
     left:0px;
     width:100%;
-    height:auto;
-    background-color:   #787878 ;
+    height:40px;
+    background-color:   #3c6e71; /*teal*/
 }
 
 div#calendar div.header{
     line-height:40px;
     vertical-align:middle;
-    position:relative;
+    position:absolute;
     left:11px;
     top:0px;
-    width:70%;
-    height:auto;
+    width:582px;
+    height:40px;
     text-align:center;
 }
 
 div#calendar div.header a.prev,div#calendar div.header a.next{
-    position:relative;
+    position:absolute;
     top:0px;
     height: 17px;
     display:block;
@@ -54,7 +54,7 @@ div#calendar div.header a.next{
 
 /*******************************Calendar Content Cells*********************************/
 div#calendar div.box-content{
-    border:1px solid #787878 ;
+    border:1px solid #3c6e71; /*teal*/ ;
     border-top:none;
 }
 
@@ -74,8 +74,8 @@ div#calendar ul.label li{
     margin-right:5px;
     float:left;
     list-style-type:none;
-    width:14%;
-    height:auto;
+    width:80px;
+    height:40px;
     line-height:40px;
     vertical-align:middle;
     text-align:center;
@@ -106,6 +106,8 @@ div#calendar ul.dates li{
     width:80px;
     height:80px;
     font-size:25px;
+    border: solid 2px;
+    border-color: #3c6e71; /*teal*/
     background-color: #DDD;
     color:#000;
     text-align:center;
