@@ -19,8 +19,9 @@
         margin-top: 2%;
         border-radius: 6px;
       }
-      .container{
+      div {
         max-width: 45%;
+        margin:auto;
       }
 
     </style>
@@ -50,7 +51,7 @@
 <button class="btn-block"data-toggle="collapse" data-target="#family">
   Family Photos</button><br>
 
-<div id="family" class="collapse container">
+<div id="family" class="collapse ">
   <p>Includes:</p><br>
   <ul>
     <li>Whole Family Photos</li>
@@ -68,7 +69,7 @@
 <button class="btn-block" data-toggle="collapse" data-target="#dance">
   Dance Photos</button><br>
 
-<div id="dance" class="collapse container">
+<div id="dance" class="collapse">
   <p>Includes:</p> <br>
   <ul>
     <li>Group photos</li>
@@ -85,7 +86,7 @@
 <button class="btn-block" data-toggle="collapse" data-target="#sports">
   Sports Photos</button><br>
 
-<div id="sports" class="collapse container">
+<div id="sports" class="collapse">
 <p>Includes:</p> <br>
 <ul>
   <li>Team Photos</li>
@@ -98,7 +99,7 @@
 <button class="btn-block" data-toggle="collapse" data-target="#engament">
   Engagement Photos</button><br>
 
-<div id="engagement" class="collapse container">
+<div id="engagement" class="collapse">
   <p>Includes:</p> <br>
   <ul>
     <li>1.5 hours of photos</li>
@@ -113,7 +114,7 @@
 <button class="btn-block" data-toggle="collapse" data-target="#wedding">
   Wedding Photos</button><br>
 
-<div id="wedding" class="collapse container">
+<div id="wedding" class="collapse">
   <p>Includes:</p> <br>
   <ul>
     <li>Up to 2.5 hours of photos</li>
