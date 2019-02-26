@@ -23,26 +23,27 @@ while ($row = $appointment->fetch(PDO::FETCH_ASSOC))
 	$d_package = $row['package'];
 	echo "<div>$d_username<br> $d_time<br> $d_date<br>$d_package</div><br>";
 
-  require 'build_calendar.php';
-  $calendar = new Calendar;
-  echo $calendar->show();
-  $num_days = $calendar->getTotalDays();
-  $num_month = $calendar->getCurrentMonth();
-  echo "<br>Total Days: $num_days <br> Current Month: $num_month";
+}
 
-  $month_query = 'SELECT appointment, appt FROM appointment a
-  JOIN calendar cal ON cal.id = a.calendar_id
-  WHERE EXTRACT(MONTH FROM appt) = :num_month';
-  $num_month = $db->prepare($month_query);
-  $num_month->bindValue(':num_month', $num_month);
-  $num_month->execute();
+require 'build_calendar.php';
+$calendar = new Calendar;
+echo $calendar->show();
+$num_days = $calendar->getTotalDays();
+$num_month = $calendar->getCurrentMonth();
+echo "<br>Total Days: $num_days <br> Current Month: $num_month";
 
-  while ($arow = $num_month->fetch(PDO::FETCH_ASSOC))
-  {
-    $date_array = date_parse($arow['appt']);
-    $current_appt = $date_array['day'];
-    echo "$current_appt";
-  }
+$month_query = 'SELECT appointment, appt FROM appointment a
+JOIN calendar cal ON cal.id = a.calendar_id
+WHERE EXTRACT(MONTH FROM appt) = :num_month';
+$num_month = $db->prepare($month_query);
+$num_month->bindValue(':num_month', $num_month);
+$num_month->execute();
+
+while ($arow = $num_month->fetch(PDO::FETCH_ASSOC))
+{
+  $date_array = date_parse($arow['appt']);
+  $current_appt = $date_array['day'];
+  echo "$current_appt";
 }
 
 ?>
