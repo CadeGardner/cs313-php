@@ -51,6 +51,10 @@ if (isset($_POST['client']) && isset($_POST['txtPassword']))
 	button{
 		background-color: #3c6e71; /*teal*/
 	}
+
+	.container{
+		max-width: 50%;
+	}
 </style>
 </head>
 
