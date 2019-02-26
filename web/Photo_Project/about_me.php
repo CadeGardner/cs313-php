@@ -22,15 +22,15 @@
   </head>
   <body>
     <div class="container">
-      <img class="img-fluid" src="myapproach.jpg" alt="elaine.jpg">
+      <img src="myapproach.jpg" alt="elaine.jpg">
     </div>
 
     <div class="jumbotron">
 
 
 
-    <h2>About Me</h2>
-            <p>
+    <h2 style="color:#d9d9d9;">About Me </h2>
+            <p style="color:#d9d9d9;">
                 I have been taking professional portraits since 1993... almost 25 years! <br/>I love to be behind the camera and see people smile! Capturing the amazing moments<br/>
                 and special times in life is priceless! I offer high quality DVD with edited portraits <br/>
                 and a copyright release with all photos! I can also do portraits with 35mm film, <br/>
