@@ -19,6 +19,9 @@
         margin-top: 2%;
         border-radius: 6px;
       }
+      .container{
+        max-width: 45%;
+      }
 
     </style>
   </head>
