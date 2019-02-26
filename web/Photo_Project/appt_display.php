@@ -29,6 +29,9 @@
   	$d_date = $row['appt'];
   	$d_package = $row['package'];
   	echo "<div>$d_username<br> $d_time<br> $d_date<br>$d_package</div><br>";
+    $date_array = date_parse($row['appt']);
+    $current_appt = $date_array['day'];
+    echo "$current_appt";
 
   }
 
@@ -45,9 +48,7 @@
   while ($month_row = $num_month->fetch(PDO::FETCH_ASSOC))
   {
     echo "loop entered";
-    $date_array = date_parse($month_row['appt']);
-    $current_appt = $date_array['day'];
-    echo "$current_appt";
+
   }
 
 ?>
