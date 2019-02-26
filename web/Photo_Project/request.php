@@ -23,7 +23,8 @@
 
         while($tNow <= $tEnd)
         {
-          echo "<option value=''>".date('h:i',$tNow)."</option>";
+          $current_time = date('h:i',$tNow);
+          echo "<option value='$current_time'>".$current_time."</option>";
           $tNow = strtotime('+30 minutes',$tNow);
         }
         ?>
