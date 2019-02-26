@@ -5,13 +5,43 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1" />
     <title>Request Appointment</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="main.css" type="text/css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <style media="screen">
+    .btn-info{
+      background-color: #3c6e71; /*teal*/
+    }
+    .jumbotron-fluid{
+      background-color: #3c6e71; /*teal*/
+    }
+
+    .container{
+      max-width: 30%;
+    }
+    h1{
+    text-align: center;
+  }
+    </style>
+
   </head>
   <body>
+    <div class="jumbotron-fluid">
+    <h1>Request Appointment</h1>
+  </div>
+  <div class="container">
     <form class="" action="log_appt.php" method="post">
-      <!-- <input type="text" name="username" value="" placeholder="Username"><br> -->
-      <input type="date" name="appt" value="" placeholder="mm/dd/yyyy"><br>
-      <select class="" name="time">
+      <div class="form-group">
+        <label for="date">Date:</label><br>
+        <input id="date" type="date" name="appt" value="" placeholder="mm/dd/yyyy"><br>
+      </div>
+
+      <select class="custom-select" name="time">
 
         <?php
         $start = "8:00";
@@ -30,21 +60,23 @@
         ?>
       </select>
 
-      <select class="" name="timeframe">
+      <select class="custom-select" name="timeframe">
         <option value="am">a.m.</option>
         <option value="pm">p.m.</option>
       </select><br>
 
-      <select class="" name="package">
+      <select class="custom-select" name="package">
         <option value="Family">Family</option>
         <option value="Dance">Dance</option>
         <option value="Sports">Sports</option>
         <option value="Engagements">Engagements</option>
         <option value="Wedding">Wedding</option>
       </select><br>
-      <button type="submit" name="request">Request</button>
-      <a href="appt_display.php"><button type="button" name="button">
+      <button class="btn btn-info" type="submit" name="request">Request</button>
+      <a href="appt_display.php"><button class="btn btn-info" type="button" name="button">
       View Calendar</button></a><br>
     </form>
+  </div>
+
   </body>
 </html>
