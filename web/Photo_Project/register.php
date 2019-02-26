@@ -14,14 +14,22 @@
     		background-color: #3c6e71; /*teal*/
     	}
 
+      .jumbotron-fluid{
+        background-color: #3c6e71; /*teal*/
+      }
+
     	.container{
     		max-width: 30%;
     	}
     </style>
   </head>
   <body>
-    <div class="container">
+    <div class="jumbotron-fluid">
       <h1>Sign up for new account</h1>
+    </div>
+
+    <div class="container">
+
 
   <form id="createAccountForm" action="new_user.php" method="POST">
 
@@ -36,7 +44,7 @@
     <div class="form-group">
       <label for="txtPassword">Password</label><br>
       <input type="password" id="txtPassword" name="txtPassword" placeholder="Password"></input>
-    	
+
     	<br /><br />
 
     </div>
