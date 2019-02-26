@@ -53,7 +53,7 @@ if (isset($_POST['client']) && isset($_POST['txtPassword']))
 	}
 
 	.container{
-		max-width: 40%;
+		max-width: 30%;
 	}
 </style>
 </head>
