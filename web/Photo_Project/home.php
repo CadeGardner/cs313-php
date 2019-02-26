@@ -31,6 +31,9 @@
     max-width: 65%;
     max-height: 70%;
   }
+  .navbar{
+    background-color: #3c6e71; /*teal*/
+  }
   </style>
 
     <script>
@@ -53,7 +56,7 @@
   </head>
   <body>
     <h1>E Lewis Photography</h1>
-    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+    <nav class="navbar navbar-expand-sm navbar-light">
   <ul class="navbar-nav">
     <li class="nav-item active">
       <a class="nav-link" href="packages.php">Pricing</a>
