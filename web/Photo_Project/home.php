@@ -18,6 +18,9 @@
   .carousel-control-next-icon{
     color: black;
   }
+  .container{
+    max-width: 65%;
+  }
   </style>
 
     <script>
