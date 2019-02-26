@@ -55,6 +55,8 @@
       <li><a href="login.php">Login</a></li>
     </ul>
 
+
+<div class="container">
     <!-- Carousel Portfolio -->
     <div class="carousel" id="myCarousel">
 
@@ -107,7 +109,7 @@
       </a>
 
     </div>
-
+</div>
 
     <div class="jumbotron-fluid">  <!-- Maybe Modify this style some... -->
       <p>photo philosophy will go here</p>
