@@ -81,7 +81,7 @@
 </nav>
 
 
-
+<h2>Portfolio</h2>
 <div class="container">
     <!-- Carousel Portfolio -->
     <div class="carousel" id="myCarousel">
@@ -136,10 +136,6 @@
 
     </div>
 </div>
-
-    <div class="jumbotron-fluid">  <!-- Maybe Modify this style some... -->
-      <p>photo philosophy will go here</p>
-    </div>
 
   </body>
 </html>
