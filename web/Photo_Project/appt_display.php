@@ -31,8 +31,13 @@
   	echo "<div>$d_username<br> $d_time<br> $d_date<br>$d_package</div><br>";
     $date_array = date_parse($row['appt']);
     $current_appt = $date_array['day'];
-    echo "$current_appt";
+    $id = 'li-2019-'.$num_month.'-'.$current_appt;
 
+    "<script type='text/javascript'>
+     document.getElementById("$id")\.innerHTML =
+     <div>$d_username<br> $d_time<br> $d_date<br>$d_package</div>
+     </script>"
+    
   }
 
 
@@ -59,9 +64,7 @@
     <title></title>
   </head>
   <body>
-    <!-- <script type="text/javascript">
-      document.getElementById('li-2019' + $num_month)
-    </script> -->
+
     <?php
 
 
