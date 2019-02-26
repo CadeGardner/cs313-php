@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="" content="">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Elaine Lewis Photography</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -14,7 +15,33 @@
       height: 100%;
   }
   </style>
-    <title>Elaine Lewis Photography</title>
+
+    <script>
+    $(document).ready(function(){
+      // Activate Carousel
+      $("#myCarousel").carousel();
+
+      // // Enable Carousel Indicators
+      // $(".item1").click(function(){
+      //   $("#myCarousel").carousel(0);
+      // });
+      // $(".item2").click(function(){
+      //   $("#myCarousel").carousel(1);
+      // });
+      // $(".item3").click(function(){
+      //   $("#myCarousel").carousel(2);
+      // });
+
+      // Enable Carousel Controls
+      $(".carousel-control-prev").click(function(){
+        $("#myCarousel").carousel("prev");
+      });
+      $(".carousel-control-next").click(function(){
+        $("#myCarousel").carousel("next");
+      });
+    });
+    </script>
+
 
 
   </head>
@@ -29,7 +56,7 @@
     </ul>
 
     <!-- Carousel Portfolio -->
-    <div class="carousel">
+    <div class="carousel" id="myCarousel">
 
       <!-- The Slide Show -->
       <div class="carousel-inner">
