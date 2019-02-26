@@ -30,7 +30,7 @@
   .container{
     max-width: 65%;
     max-height: 70%;
-    margin-top: 3%;
+    margin-top: 0.5%;
     border: solid 6px;
     border-color: #3c6e71; /*teal*/
     background-color: #171F26 /*dark grey*/;
@@ -41,6 +41,7 @@
   #portfolio{
     max-width: 65%;
     margin: auto;
+    margin-top: 3%;
   }
   </style>
 
