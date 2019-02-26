@@ -14,7 +14,7 @@
       button{
         max-width: 45%;
         margin: auto;
-        color: #3c6e71; /*teal*/
+        background-color: #3c6e71; /*teal*/
       }
 
 
@@ -42,7 +42,8 @@
   </ul>
 </nav>
 
-<button data-toggle="collapse" data-target="#family">Family Photos</button><br>
+<button class="btn-block"data-toggle="collapse" data-target="#family">
+  Family Photos</button><br>
 
 <div id="family" class="collapse">
   <p>Includes:</p><br>
@@ -59,7 +60,8 @@
   </ul>
 </div>
 
-<button data-toggle="collapse" data-target="#dance">Dance Photos</button><br>
+<button class="btn-block" data-toggle="collapse" data-target="#dance">
+  Dance Photos</button><br>
 
 <div id="dance" class="collapse">
   <p>Includes:</p> <br>
@@ -75,7 +77,8 @@
 
 </div>
 
-<button data-toggle="collapse" data-target="#sports">Sports Photos</button><br>
+<button class="btn-block" data-toggle="collapse" data-target="#sports">
+  Sports Photos</button><br>
 
 <div id="sports" class="collapse">
 <p>Includes:</p> <br>
@@ -87,7 +90,8 @@
 </ul>
 </div>
 
-<button data-toggle="collapse" data-target="#engament">Engagement Photos</button><br>
+<button class="btn-block" data-toggle="collapse" data-target="#engament">
+  Engagement Photos</button><br>
 
 <div id="engagement" class="collapse">
   <p>Includes:</p> <br>
@@ -101,7 +105,8 @@
   </ul>
 </div>
 
-<button data-toggle="collapse" data-target="#wedding">Wedding Photos</button><br>
+<button class="btn-block" data-toggle="collapse" data-target="#wedding">
+  Wedding Photos</button><br>
 
 <div id="wedding" class="collapse">
   <p>Includes:</p> <br>
@@ -117,7 +122,8 @@
   </ul>
 </div>
 
-    <button type="button" name="request">Request Appointment</button>
+    <button class="btn-block" type="button" name="request">
+      Request Appointment</button>
     </a>
   </body>
 </html>
