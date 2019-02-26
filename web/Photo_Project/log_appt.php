@@ -45,19 +45,19 @@ $package_id = $package_row['id'];
 // echo "Package id is: $package_id";
 $message_id = 1;
 // echo "$time";
-// $time_query = 'INSERT INTO appointment (appointment, user_id, calendar_id, package_id, message_id)
-// VALUES (:appointment, :user_id, :calendar_id, :package_id, :message_id)';
-//
-// $statement = $db->prepare($time_query);
-// $statement->bindValue(':user_id', $user_id);
-// $statement->bindValue(':calendar_id', $calendar_id);
-// $statement->bindValue(':appointment', $time);
-// $statement->bindValue(':package_id', $package_id);
-// $statement->bindValue(':message_id', $message_id);
-// $statement->execute();
-//
-// flush();
-// header("Location: appt_display.php");
-// die();
+$time_query = 'INSERT INTO appointment (appointment, user_id, calendar_id, package_id, message_id)
+VALUES (:appointment, :user_id, :calendar_id, :package_id, :message_id)';
+
+$statement = $db->prepare($time_query);
+$statement->bindValue(':user_id', $user_id);
+$statement->bindValue(':calendar_id', $calendar_id);
+$statement->bindValue(':appointment', $time);
+$statement->bindValue(':package_id', $package_id);
+$statement->bindValue(':message_id', $message_id);
+$statement->execute();
+
+flush();
+header("Location: appt_display.php");
+die();
 
  ?>
