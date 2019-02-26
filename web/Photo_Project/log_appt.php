@@ -36,9 +36,14 @@ if(!isset($date_statement))
   $date_statement = $db->prepare($calendar_insert_query);
   $date_statement->bindValue(':appt', $appt);
   $date_statement->execute();
+  $date_row = $date_statement->fetch(PDO::FETCH_ASSOC);
+  $calendar_id = $date_row['id'];
 }
-$date_row = $date_statement->fetch(PDO::FETCH_ASSOC);
-$calendar_id = $date_row['id'];
+else {
+  $date_row = $date_statement->fetch(PDO::FETCH_ASSOC);
+  $calendar_id = $date_row['id'];
+}
+
 
 //echo "Date id is: $calendar_id <br>";
 
