@@ -20,8 +20,8 @@ div#calendar div.header{
     position:absolute;
     left:11px;
     top:0px;
-    width:582px;
-    height:40px;
+    width:70%;
+    height:auto;
     text-align:center;
 }
 
