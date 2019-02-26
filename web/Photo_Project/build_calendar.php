@@ -25,6 +25,8 @@ class Calendar {
 
     private $naviHref= null;
 
+    public $total_days = 0;
+
     /********************* PUBLIC **********************/
 
     /**
@@ -60,6 +62,8 @@ class Calendar {
         $this->currentMonth=$month;
 
         $this->daysInMonth=$this->_daysInMonth($month,$year);
+
+        $total_days = $this->_daysInMonth($month,$year);
 
         $content='<div id="calendar">'.
                         '<div class="box">'.
@@ -209,6 +213,12 @@ class Calendar {
             $month = date("m",time());
 
         return date('t',strtotime($year.'-'.$month.'-01'));
+    }
+
+    public function getTotalDays(){
+
+      return $total_days;
+
     }
 
 }
