@@ -28,11 +28,11 @@ $user_id = $user_row['id'];
 
 $calendar_query = 'SELECT id FROM calendar WHERE  appt = :appt';
 $date_statement = $db->prepare($calendar_query);
-echo "$date_statement";
 $date_statement->bindValue(':appt', $appt);
 $date_statement->execute();
-echo "$date_statement";
-if(!isset($date_statement))
+$date_row = $date_statement->fetch(PDO::FETCH_ASSOC);
+$calendar_id = $date_row['id'];
+if(!isset($calendar_id))
 {
   $calendar_insert_query = 'INSERT INTO calendar (appt) VALUES (:appt)';
   $date_statement = $db->prepare($calendar_insert_query);
@@ -40,8 +40,11 @@ if(!isset($date_statement))
   $date_statement->execute();
   $date_row = $date_statement->fetch(PDO::FETCH_ASSOC);
   $calendar_id = $date_row['id'];
-}
-else {
+
+  $calendar_query = 'SELECT id FROM calendar WHERE  appt = :appt';
+  $date_statement = $db->prepare($calendar_query);
+  $date_statement->bindValue(':appt', $appt);
+  $date_statement->execute();
   $date_row = $date_statement->fetch(PDO::FETCH_ASSOC);
   $calendar_id = $date_row['id'];
 }
