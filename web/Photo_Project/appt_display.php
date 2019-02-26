@@ -34,46 +34,8 @@ while ($row = $appointment->fetch(PDO::FETCH_ASSOC))
   <head>
     <meta charset="utf-8">
     <title></title>
-<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
-<script src="js/daypilot-all.min.js" type="text/javascript"></script>
-<link type="text/css" rel="stylesheet" href="themes/month_white.css" />
-
-<div id="dp"></div>
-
-<script type="text/javascript">
-    var dp = $("dp").daypilotMonth({
-      cssClassPrefix: "calendar_white",
-      startDate: "2019-02-01"
-    });
-</script>
-    <script src="js/daypilot-all.min.js" type="text/javascript"></script>
-    <link type="text/css" rel="stylesheet" href="themes/month_white.css" />
-
-    <div id="dp"></div>
-
-    <script type="text/javascript">
-        var dp = new DayPilot.Month("dp");
-
-        // behavior and appearance
-        dp.cssClassPrefix = "month_white";
-
-        // view
-        dp.startDate = new DayPilot.Date("2019-02-01");  // or just dp.startDate = "2013-07-01";
-
-        var e = new DayPilot.Event({
-            start: "2019-02-25T00:00:00",
-            end: "2019-02-25T12:00:00",
-            id: DayPilot.guid(),
-            text: "Event"
-        });
-
-        dp.events.add(e);
-
-        dp.init();
-
-    </script>
   </head>
   <body>
-
+    <?php require 'build_calendar.php'; ?>
   </body>
 </html>
