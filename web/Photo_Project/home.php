@@ -20,6 +20,7 @@
   }
   .container{
     max-width: 65%;
+    max-height: 70%;
   }
   </style>
 
