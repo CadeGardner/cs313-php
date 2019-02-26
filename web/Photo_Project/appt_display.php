@@ -15,6 +15,9 @@
       background-color: background-color: #3c6e71; /*teal*/
     }
 
+    .container{
+      max-width: 45%;
+    }
     </style>
 
   </head>
@@ -41,7 +44,7 @@
       // calendar_id, package_id, message_id FROM appointment
       $appointment->execute();
       // Go through each result
-      echo "<table class='table'>
+      echo "<div class='container'><table class='table'>
       <thead class='thead-dark'>
       <tr>
       <th>Name</th><th>Time</th><th>Date</th><th>Package</th></tr>
@@ -67,7 +70,7 @@
 
 
       }
-      echo "</tbody></table>";
+      echo "</tbody></table></div>";
 
       // echo "<br>Total Days: $num_days <br> Current Month: $num_month";
       //
