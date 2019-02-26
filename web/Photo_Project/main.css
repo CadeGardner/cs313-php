@@ -25,6 +25,9 @@ p, li{
     font-family: 'Open Sans', sans-serif;
 }
 
+.navbar{
+  background-color: #3c6e71; /*teal*/
+}
 /* Logo Img */
 .logo {
 

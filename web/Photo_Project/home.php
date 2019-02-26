@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="" content="">
+    <meta name="viewport" content="width = device-width, initial-scale = 1" />
     <title>Elaine Lewis Photography</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link href="main.css" type="text/css" rel="stylesheet" />
@@ -35,9 +35,7 @@
     border-color: #3c6e71; /*teal*/
     background-color: #171F26 /*dark grey*/;
   }
-  .navbar{
-    background-color: #3c6e71; /*teal*/
-  }
+
   #portfolio{
     max-width: 65%;
     margin: auto;
