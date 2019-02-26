@@ -46,7 +46,7 @@ while ($row = $appointment->fetch(PDO::FETCH_ASSOC))
       startDate: "2019-02-01"
     });
 </script>
-    <!-- <script src="js/daypilot-all.min.js" type="text/javascript"></script>
+    <script src="js/daypilot-all.min.js" type="text/javascript"></script>
     <link type="text/css" rel="stylesheet" href="themes/month_white.css" />
 
     <div id="dp"></div>
@@ -58,11 +58,11 @@ while ($row = $appointment->fetch(PDO::FETCH_ASSOC))
         dp.cssClassPrefix = "month_white";
 
         // view
-        dp.startDate = new DayPilot.Date("2013-07-01");  // or just dp.startDate = "2013-07-01";
+        dp.startDate = new DayPilot.Date("2019-02-01");  // or just dp.startDate = "2013-07-01";
 
         var e = new DayPilot.Event({
-            start: "2013-03-25T00:00:00",
-            end: "2013-03-25T12:00:00",
+            start: "2019-02-25T00:00:00",
+            end: "2019-02-25T12:00:00",
             id: DayPilot.guid(),
             text: "Event"
         });
@@ -71,7 +71,7 @@ while ($row = $appointment->fetch(PDO::FETCH_ASSOC))
 
         dp.init();
 
-    </script> -->
+    </script>
   </head>
   <body>
 
