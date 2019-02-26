@@ -15,6 +15,9 @@
         max-width: 45%;
         margin: auto;
         background-color: #3c6e71; /*teal*/
+        padding: 8px;
+        margin-top: 2%;
+        border-radius: 6px;
       }
 
 
@@ -122,7 +125,7 @@
   </ul>
 </div>
 
-    <button class="btn-block" type="button" name="request">
+    <a href="request.php"><button class="btn-block" type="button" name="request">
       Request Appointment</button>
     </a>
   </body>
