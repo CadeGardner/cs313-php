@@ -14,13 +14,33 @@
       .jumbotron{
         background-color: #3c6e71; /*teal*/
       }
-      img{
+      .container{
         max-height: 20%;
       }
     </style>
 
   </head>
   <body>
+    h1>E Lewis Photography</h1>
+    <nav class="navbar navbar-expand-sm navbar-light">
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="home.php">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="packages.php">Pricing</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="about_me.php">About Me</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="contact.php">Contact Me</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="login.php">Login</a>
+    </li>
+  </ul>
+</nav>
     <div class="container">
       <img src="myapproach.jpg" alt="elaine.jpg">
     </div>
