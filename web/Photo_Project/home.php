@@ -33,6 +33,7 @@
     margin-top: 3%;
     border: solid 6px;
     border-color: #3c6e71; /*teal*/
+    background-color: darkgray;
   }
   .navbar{
     background-color: #3c6e71; /*teal*/
