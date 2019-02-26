@@ -5,8 +5,9 @@
     <title>Getting to Know Me</title>
   </head>
   <body>
+    <img class="img-fluid"src="myapproach.jpg" alt="elaine.jpg">
     <div class="jumbotron">
-      <img src="myapproach.jpg" alt="elaine.jpg">
+
 
 
     <h2>About Me</h2>
@@ -18,7 +19,7 @@
                 to share with family and friends!
             </p>
 
-    <h2 style="color:#d9d9d9;">
+                <h2 style="color:#d9d9d9;">
                     My Approach
                 </h2>
                 <p style="color:#d9d9d9;">
