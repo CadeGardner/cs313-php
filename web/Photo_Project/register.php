@@ -2,24 +2,50 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <meta name="viewport" content="width = device-width, initial-scale = 1" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="main.css" type="text/css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style media="screen">
+    	button{
+    		background-color: #3c6e71; /*teal*/
+    	}
+
+    	.container{
+    		max-width: 30%;
+    	}
+    </style>
   </head>
   <body>
-    <h1>Sign up for new account</h1>
+    <div class="container">
+      <h1>Sign up for new account</h1>
 
-<form id="createAccountForm" action="new_user.php" method="POST">
+  <form id="createAccountForm" action="new_user.php" method="POST">
 
-	<input type="text" id="client" name="client" placeholder="Username">
-	<label for="client">Username</label>
-	<br /><br />
+    <div class="form-group">
+      <label for="client">Username</label><br>
+      <input type="text" id="client" name="client" placeholder="Username">
 
-	<input type="password" id="txtPassword" name="txtPassword" placeholder="Password"></input>
-	<label for="txtPassword">Password</label>
-	<br /><br />
+    	<br /><br />
+    </div>
 
-	<input type="submit" value="Create Account" />
 
-</form>
+    <div class="form-group">
+      <label for="txtPassword">Password</label><br>
+      <input type="password" id="txtPassword" name="txtPassword" placeholder="Password"></input>
+    	
+    	<br /><br />
+
+    </div>
+
+  	<input class="btn button-info" type="submit" value="Create Account" />
+
+  </form>
+
+</div>
 
 
   </body>
