@@ -47,7 +47,11 @@ if (isset($_POST['client']) && isset($_POST['txtPassword']))
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
+<style media="screen">
+	button{
+		background-color: #3c6e71; /*teal*/
+	}
+</style>
 </head>
 
 <body>
@@ -59,25 +63,46 @@ if ($badLogin)
 	echo "Incorrect username or password!<br /><br />\n";
 }
 ?>
-
+<h1>E Lewis Photography</h1>
+<nav class="navbar navbar-expand-sm navbar-light">
+<ul class="navbar-nav">
+<li class="nav-item active">
+	<a class="nav-link" href="home.php">Home</a>
+</li>
+<li class="nav-item">
+	<a class="nav-link" href="packages.php">Pricing</a>
+</li>
+<li class="nav-item">
+	<a class="nav-link" href="about_me.php">About Me</a>
+</li>
+<li class="nav-item">
+	<a class="nav-link" href="contact.php">Contact Me</a>
+</li>
+<li class="nav-item">
+	<a class="nav-link" href="login.php">Login</a>
+</li>
+</ul>
+</nav>
 
 <div class="container">
-<h1>Please sign in below:</h1>	
+<h1>Please sign in below:</h1>
 
 <form id="loginForm" action="login.php" method="POST">
 <div class="form-group">
+	<label for="client">Username</label><br>
 	<input type="text" id="client" name="client" placeholder="Username">
-	<label for="client">Username</label>
+
 	<br/><br/>
 </div>
 
 <div class="form-group">
+	<label for="txtPassword">Password</label><br>
 	<input type="password" id="txtPassword" name="txtPassword" placeholder="Password">
-	<label for="txtPassword">Password</label>
+
 	<br/><br/>
 </div>
 
-	<input class="btn" type="submit" value="Sign In" />
+	<input class="btn button-info" type="submit" value="Sign In" />
 
 </form>
 
@@ -86,6 +111,6 @@ if ($badLogin)
 Or <a href="register.php">Sign up</a> for a new account.
 
 </div>
-
+</div>
 </body>
 </html>
