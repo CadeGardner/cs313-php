@@ -37,5 +37,6 @@ while ($row = $appointment->fetch(PDO::FETCH_ASSOC))
   </head>
   <body>
     <?php require 'build_calendar.php'; ?>
+
   </body>
 </html>
