@@ -17,6 +17,7 @@
 
   .carousel-control-prev-icon{
     background-color: black;
+    color: black;
   }
   .container{
     max-width: 65%;
