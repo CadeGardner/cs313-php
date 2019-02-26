@@ -56,7 +56,7 @@
       </textarea>
     </div>
 
-    <button class="btn btn-outline-primary"type="submit" name="button">Send Message</button>
+    <button class="btn "type="submit" name="button">Send Message</button>
   </form>
 </div>
 
