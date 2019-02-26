@@ -34,8 +34,19 @@ while ($row = $appointment->fetch(PDO::FETCH_ASSOC))
   <head>
     <meta charset="utf-8">
     <title></title>
+    <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="js/daypilot-all.min.js" type="text/javascript"></script>
+<link type="text/css" rel="stylesheet" href="themes/month_white.css" />
 
-    <script src="js/daypilot-all.min.js" type="text/javascript"></script>
+<div id="dp"></div>
+
+<script type="text/javascript">
+    var dp = $("dp").daypilotMonth({
+      cssClassPrefix: "calendar_white",
+      startDate: "2013-03-01"
+    });
+</script>
+    <!-- <script src="js/daypilot-all.min.js" type="text/javascript"></script>
     <link type="text/css" rel="stylesheet" href="themes/month_white.css" />
 
     <div id="dp"></div>
@@ -60,7 +71,7 @@ while ($row = $appointment->fetch(PDO::FETCH_ASSOC))
 
         dp.init();
 
-    </script>
+    </script> -->
   </head>
   <body>
 
