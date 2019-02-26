@@ -54,9 +54,9 @@ while ($row = $appointment->fetch(PDO::FETCH_ASSOC))
         $num_month->bindValue(':num_month', $num_month);
         $num_month->execute();
 
-        while ($row = $num_month->fetch(PDO::FETCH_ASSOC))
+        while ($arow = $num_month->fetch(PDO::FETCH_ASSOC))
         {
-          $date_array = date_parse($row['appt']);
+          $date_array = date_parse($arow['appt']);
           $current_appt = $date_array['day'];
           echo "$current_appt";
         }
