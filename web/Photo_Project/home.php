@@ -14,23 +14,16 @@
       width: 100%;
       height: 100%;
   }
+
+  .carousel-control-next-icon{
+    color: black;
+  }
   </style>
 
     <script>
     $(document).ready(function(){
       // Activate Carousel
       $("#myCarousel").carousel();
-
-      // // Enable Carousel Indicators
-      // $(".item1").click(function(){
-      //   $("#myCarousel").carousel(0);
-      // });
-      // $(".item2").click(function(){
-      //   $("#myCarousel").carousel(1);
-      // });
-      // $(".item3").click(function(){
-      //   $("#myCarousel").carousel(2);
-      // });
 
       // Enable Carousel Controls
       $(".carousel-control-prev").click(function(){
