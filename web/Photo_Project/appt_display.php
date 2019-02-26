@@ -41,6 +41,7 @@ $num_month->execute();
 
 while ($arow = $num_month->fetch(PDO::FETCH_ASSOC))
 {
+  echo "loop entered";
   $date_array = date_parse($arow['appt']);
   $current_appt = $date_array['day'];
   echo "$current_appt";
