@@ -36,6 +36,9 @@ while ($row = $appointment->fetch(PDO::FETCH_ASSOC))
     <title></title>
   </head>
   <body>
+    <!-- <script type="text/javascript">
+      document.getElementById('li-2019' + $num_month)
+    </script> -->
     <?php
         require 'build_calendar.php';
         $calendar = new Calendar;
@@ -44,6 +47,20 @@ while ($row = $appointment->fetch(PDO::FETCH_ASSOC))
         $num_days = $calendar->getTotalDays();
         $num_month = $calendar->getCurrentMonth();
         echo "<br>Total Days: $num_days <br> Current Month: $num_month";
+
+        $month_query = 'SELECT appointment, appt FROM appointment a
+        JOIN calendar cal ON cal.id = a.calendar_id WHERE EXTRACT(MONTH FROM appt) = :num_month';
+        $num_month = $db->prepare($calendar_query);
+        $num_month->bindValue(':num_month', $num_month);
+        $num_month->execute();
+
+        while ($row = $num_month->fetch(PDO::FETCH_ASSOC))
+        {
+          $date_array = date_parse($row['appt']);
+          $current_appt = $date_array['day'];
+          echo "$current_appt";
+        }
+
      ?>
 
   </body>

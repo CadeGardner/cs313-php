@@ -74,3 +74,9 @@ VALUES
 
 
 ALTER TABLE client ADD COLUMN client_type VARCHAR(10) NOT NULL DEFAULT 'user';
+
+SELECT appt FROM calendar JOIN calendar cal ON cal.id = a.calendar_id WHERE EXTRACT(MONTH FROM appt) = 02;
+
+SELECT appointment, appt
+FROM appointment a
+JOIN calendar cal ON cal.id = a.calendar_id WHERE EXTRACT(MONTH FROM appt) = 02;
