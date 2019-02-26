@@ -217,7 +217,7 @@ class Calendar {
 
     public function getTotalDays(){
 
-      return $total_days;
+      return $daysInMonth;
 
     }
 
