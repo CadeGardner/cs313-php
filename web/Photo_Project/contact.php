@@ -12,7 +12,7 @@
 
     <style media="screen">
       button{
-        color: #3c6e71; /*teal*/
+        background-color: #3c6e71; /*teal*/
       }
     </style>
   </head>
@@ -42,16 +42,16 @@
 <div class="container">
   <form class="" action="index.html" method="post">
     <div class="form-group">
-      <label for="name">Name:</label>
+      <label for="name">Name:</label><br>
       <input id="name"type="text" name="name" value="" placeholder="Name">
     </div>
     <div class="form-group">
-      <label for="email">Email:</label>
+      <label for="email">Email:</label><br>
       <input id="email" type="text" name="email" value="" placeholder="Email">
     </div>
 
     <div class="form-group">
-      <label for="message">Message:</label>
+      <label for="message">Message:</label><br>
       <textarea id="message" name="name" rows="15" cols="100" placeholder="Message">
       </textarea>
     </div>
