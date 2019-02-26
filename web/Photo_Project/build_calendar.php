@@ -81,6 +81,7 @@ class Calendar {
                                     //Create days in a week
                                     for($j=1;$j<=7;$j++){
                                         $content.=$this->_showDay($i*7+$j);
+
                                     }
                                 }
 
@@ -217,7 +218,7 @@ class Calendar {
 
     public function getTotalDays(){
 
-      return $daysInMonth;
+      return $this->daysInMonth;
 
     }
 
