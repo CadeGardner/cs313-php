@@ -30,6 +30,9 @@
   .container{
     max-width: 65%;
     max-height: 70%;
+    margin-top: 3%;
+    border: solid 6px;
+    border-color: #3c6e71; /*teal*/
   }
   .navbar{
     background-color: #3c6e71; /*teal*/
