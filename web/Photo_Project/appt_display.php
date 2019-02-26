@@ -32,9 +32,9 @@ $num_days = $calendar->getTotalDays();
 $num_month = $calendar->getCurrentMonth();
 echo "<br>Total Days: $num_days <br> Current Month: $num_month";
 
-$month_query = 'SELECT appointment, appt FROM appointment a
+$month_query = "SELECT appointment, appt FROM appointment a
 JOIN calendar cal ON cal.id = a.calendar_id
-WHERE EXTRACT(MONTH FROM appt) = :num_month';
+WHERE EXTRACT(MONTH FROM appt) = $num_month";
 $num_month = $db->prepare($month_query);
 $num_month->bindValue(':num_month', $num_month);
 $num_month->execute();
