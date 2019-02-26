@@ -41,7 +41,7 @@ while ($row = $appointment->fetch(PDO::FETCH_ASSOC))
         $calendar = new Calendar;
         echo $calendar->show();
         echo "Pre total days being set";
-        $total_days = $calendar->_daysInMonth(0,0);
+        $total_days = $calendar->_daysInMonth(NULL,NULL);
         echo "Total Days: $total_days";
      ?>
 
