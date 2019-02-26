@@ -9,6 +9,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <style media="screen">
+      button{
+        max-width: 45%;
+        margin: auto;
+        color: #3c6e71; /*teal*/
+      }
+
+
+    </style>
   </head>
   <body>
     <h1>E Lewis Photography</h1>
@@ -32,7 +42,7 @@
   </ul>
 </nav>
 
-<button data-toggle="collapse" data-target="#family">Family Photos</button>
+<button data-toggle="collapse" data-target="#family">Family Photos</button><br>
 
 <div id="family" class="collapse">
   <p>Includes:</p><br>
@@ -49,7 +59,7 @@
   </ul>
 </div>
 
-<button data-toggle="collapse" data-target="#dance">Dance Photos</button>
+<button data-toggle="collapse" data-target="#dance">Dance Photos</button><br>
 
 <div id="dance" class="collapse">
   <p>Includes:</p> <br>
@@ -65,7 +75,7 @@
 
 </div>
 
-<button data-toggle="collapse" data-target="#sports">Sports Photos</button>
+<button data-toggle="collapse" data-target="#sports">Sports Photos</button><br>
 
 <div id="sports" class="collapse">
 <p>Includes:</p> <br>
@@ -77,7 +87,7 @@
 </ul>
 </div>
 
-<button data-toggle="collapse" data-target="#engament">Engagement Photos</button>
+<button data-toggle="collapse" data-target="#engament">Engagement Photos</button><br>
 
 <div id="engagement" class="collapse">
   <p>Includes:</p> <br>
@@ -91,7 +101,7 @@
   </ul>
 </div>
 
-<button data-toggle="collapse" data-target="#wedding">Wedding Photos</button>
+<button data-toggle="collapse" data-target="#wedding">Wedding Photos</button><br>
 
 <div id="wedding" class="collapse">
   <p>Includes:</p> <br>
