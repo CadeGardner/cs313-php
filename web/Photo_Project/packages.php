@@ -20,7 +20,6 @@
         border-radius: 6px;
       }
 
-
     </style>
   </head>
   <body>
@@ -48,7 +47,7 @@
 <button class="btn-block"data-toggle="collapse" data-target="#family">
   Family Photos</button><br>
 
-<div id="family" class="collapse">
+<div id="family" class="collapse container">
   <p>Includes:</p><br>
   <ul>
     <li>Whole Family Photos</li>
@@ -66,7 +65,7 @@
 <button class="btn-block" data-toggle="collapse" data-target="#dance">
   Dance Photos</button><br>
 
-<div id="dance" class="collapse">
+<div id="dance" class="collapse container">
   <p>Includes:</p> <br>
   <ul>
     <li>Group photos</li>
@@ -83,7 +82,7 @@
 <button class="btn-block" data-toggle="collapse" data-target="#sports">
   Sports Photos</button><br>
 
-<div id="sports" class="collapse">
+<div id="sports" class="collapse container">
 <p>Includes:</p> <br>
 <ul>
   <li>Team Photos</li>
@@ -96,7 +95,7 @@
 <button class="btn-block" data-toggle="collapse" data-target="#engament">
   Engagement Photos</button><br>
 
-<div id="engagement" class="collapse">
+<div id="engagement" class="collapse container">
   <p>Includes:</p> <br>
   <ul>
     <li>1.5 hours of photos</li>
@@ -111,7 +110,7 @@
 <button class="btn-block" data-toggle="collapse" data-target="#wedding">
   Wedding Photos</button><br>
 
-<div id="wedding" class="collapse">
+<div id="wedding" class="collapse container">
   <p>Includes:</p> <br>
   <ul>
     <li>Up to 2.5 hours of photos</li>
