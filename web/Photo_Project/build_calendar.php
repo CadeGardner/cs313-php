@@ -63,7 +63,7 @@ class Calendar {
 
         $this->daysInMonth=$this->_daysInMonth($month,$year);
 
-        $total_days = $this->_daysInMonth($month,$year);
+        $this->total_days = $this->_daysInMonth($month,$year);
 
         $content='<div id="calendar">'.
                         '<div class="box">'.
