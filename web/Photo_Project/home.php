@@ -16,6 +16,7 @@
   }
 
   .carousel-control-prev-icon{
+    padding: 5px;
     background-color: black;
     color: black;
   }
