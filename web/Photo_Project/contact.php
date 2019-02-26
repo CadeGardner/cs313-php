@@ -40,7 +40,7 @@
 </nav>
 
 <div class="container">
-  <form class="" action="index.html" method="post">
+  <form class="" action="#" method="post">
     <div class="form-group">
       <label for="name">Name:</label><br>
       <input id="name"type="text" name="name" value="" placeholder="Name">
