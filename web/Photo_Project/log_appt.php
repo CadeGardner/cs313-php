@@ -11,6 +11,8 @@ $time = $_POST['time'];
 $package = $_POST['package'];
 $timeframe = $_POST['timeframe'];
 
+echo "$appt<br>$time<br>$package<br>$timeframe";
+
 
 $db = get_db();
 
