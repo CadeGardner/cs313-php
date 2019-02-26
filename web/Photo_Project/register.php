@@ -11,7 +11,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <style media="screen">
 
-
+      .btn-info{
+        background-color: #3c6e71; /*teal*/
+      }
       .jumbotron-fluid{
         background-color: #3c6e71; /*teal*/
       }
@@ -47,7 +49,7 @@
 
     </div>
 
-  	<input type="submit" class="btn button-info" value="Create Account" />
+  	<input type="submit" class="btn btn-info" value="Create Account" />
 
   </form>
 
