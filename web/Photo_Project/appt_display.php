@@ -2,8 +2,21 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <meta name="viewport" content="width = device-width, initial-scale = 1" />
+    <title>Calendar</title>
     <link href="calendar.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="main.css" type="text/css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style media="screen">
+    .thead-dark{
+      background-color: background-color: #3c6e71; /*teal*/
+    }
+
+    </style>
+
   </head>
   <body>
 
@@ -28,6 +41,11 @@
       // calendar_id, package_id, message_id FROM appointment
       $appointment->execute();
       // Go through each result
+      echo "<table class='table'>
+      <thead class='thead-dark'>
+      <tr>
+      <th>Name</th><th>Time</th><th>Date</th><th>Package</th></tr>
+      </thead><tbody>";
       while ($row = $appointment->fetch(PDO::FETCH_ASSOC))
       {
       	// The variable "row" now holds the complete record for that
@@ -37,7 +55,7 @@
       	$d_time = $row['appointment'];
       	$d_date = $row['appt'];
       	$d_package = $row['package'];
-      	echo "<div>$d_username<br> $d_time<br> $d_date<br>$d_package</div><br>";
+      	echo "<tr><td>$d_username</td> <td>$d_time</td> <td>$d_date</td><td>$d_package</td></tr>";
         $date_array = date_parse($row['appt']);
         $current_appt = $date_array['day'];
         $id = 'li-2019-'.$num_month.'-'.$current_appt;
@@ -49,22 +67,22 @@
 
 
       }
+      echo "</tbody></table>";
 
-
-      echo "<br>Total Days: $num_days <br> Current Month: $num_month";
-
-      $month_query = "SELECT appointment, appt FROM appointment a
-      JOIN calendar cal ON cal.id = a.calendar_id
-      WHERE EXTRACT(MONTH FROM appt) = $num_month";
-      $num_month = $db->prepare($month_query);
-      $num_month->bindValue(':num_month', $num_month);
-      $num_month->execute();
-
-      while ($month_row = $num_month->fetch(PDO::FETCH_ASSOC))
-      {
-        echo "loop entered";
-
-      }
+      // echo "<br>Total Days: $num_days <br> Current Month: $num_month";
+      //
+      // $month_query = "SELECT appointment, appt FROM appointment a
+      // JOIN calendar cal ON cal.id = a.calendar_id
+      // WHERE EXTRACT(MONTH FROM appt) = $num_month";
+      // $num_month = $db->prepare($month_query);
+      // $num_month->bindValue(':num_month', $num_month);
+      // $num_month->execute();
+      //
+      // while ($month_row = $num_month->fetch(PDO::FETCH_ASSOC))
+      // {
+      //   echo "loop entered";
+      //
+      // }
 
     ?>
 
