@@ -12,7 +12,10 @@
 
     <style media="screen">
       .jumbotron{
-        background-color: background-color: #3c6e71; /*teal*/
+        background-color: #3c6e71; /*teal*/
+      }
+      img{
+        max-height: 20%;
       }
     </style>
 
