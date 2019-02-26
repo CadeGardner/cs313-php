@@ -13,9 +13,12 @@
     <style media="screen">
       .jumbotron{
         background-color: #3c6e71; /*teal*/
+        margin-top: 8px;
       }
       .container{
         max-height: 10%;
+        margin-top: 8px;
+
       }
     </style>
 
