@@ -25,6 +25,10 @@ p, li{
     font-family: 'Open Sans', sans-serif;
 }
 
+input{
+  border-radius: 7px;
+}
+
 .navbar{
   background-color: #3c6e71; /*teal*/
 }
