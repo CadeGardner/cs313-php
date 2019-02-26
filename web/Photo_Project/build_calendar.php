@@ -10,7 +10,8 @@ class Calendar {
     }
 
     /********************* PROPERTY ********************/
-    private $dayLabels = array("Mon","Tue","Wed","Thu","Fri","Sat","Sun");
+    private $dayLabels = array("Monday","Tuesday","Wednesday",
+                               "Thursday","Friday","Saturday","Sunday");
 
     private $currentYear=0;
 
@@ -211,6 +212,3 @@ class Calendar {
     }
 
 }
-
-$calendar = new Calendar;
-echo $calendar->show();

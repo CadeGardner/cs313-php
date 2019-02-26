@@ -36,7 +36,13 @@ while ($row = $appointment->fetch(PDO::FETCH_ASSOC))
     <title></title>
   </head>
   <body>
-    <?php require 'build_calendar.php'; ?>
+    <?php
+        require 'build_calendar.php';
+        $calendar = new Calendar;
+        echo $calendar->show();
+        $total_days = $calendar->_daysInMonth(null,null);
+        echo "Total Days: $total_days";
+     ?>
 
   </body>
 </html>
