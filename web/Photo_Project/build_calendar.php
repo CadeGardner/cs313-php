@@ -214,4 +214,3 @@ class Calendar {
 
 $calendar = new Calendar;
 $calendar->show();
-?>
