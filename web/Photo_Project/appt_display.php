@@ -18,7 +18,12 @@
     .container{
       max-width: 45%;
     }
-    .nav-link{color: #d9d9d9;}
+    .nav-link{
+      color: #d9d9d9;
+    }
+    .nav-item{
+      color: #d9d9d9;
+    }
     </style>
 
   </head>
