@@ -18,7 +18,7 @@
     .container{
       max-width: 45%;
     }
-    nav ,li {color: white;}
+    nav ,a {color: white;}
     </style>
 
   </head>
