@@ -21,7 +21,7 @@
     .nav-link{
       color: #d9d9d9;
     }
-    .navbar-nav.nav-item.nav-link li a{
+    .link-color{
       color: #d9d9d9;
     }
     </style>
@@ -34,7 +34,7 @@
     <li class="nav-item active">
       <a class="nav-link" href="home.php">Home</a>
     </li>
-    <li class="nav-item">
+    <li class="nav-item link-color">
       <a class="nav-link" href="packages.php">Pricing</a>
     </li>
     <li class="nav-item">
