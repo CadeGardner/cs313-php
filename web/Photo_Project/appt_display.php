@@ -22,6 +22,29 @@
 
   </head>
   <body>
+    <h1>E Lewis Photography</h1>
+    <nav class="navbar navbar-expand-sm navbar-light">
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="home.php">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="packages.php">Pricing</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="about_me.php">About Me</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="contact.php">Contact Me</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="login.php">Login</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="request.php">Request Appointment</a>
+    </li>
+  </ul>
+</nav>
 
     <?php
       require "db_connect.php";
