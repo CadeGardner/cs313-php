@@ -35,7 +35,7 @@
       <a class="nav-link" href="home.php">Home</a>
     </li>
     <li class="nav-item link-color">
-      <a class="nav-link link-color" href="packages.php">Pricing</a>
+      <a class="nav-link" class="link-color" href="packages.php">Pricing</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="about_me.php">About Me</a>
