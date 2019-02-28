@@ -21,7 +21,7 @@
     .nav-link{
       color: #d9d9d9;
     }
-    .navbar-nav li a{
+    .navbar-nav.nav-item.nav-link li a{
       color: #d9d9d9;
     }
     </style>
