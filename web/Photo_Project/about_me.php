@@ -42,6 +42,9 @@
     <li class="nav-item">
       <a class="nav-link" href="login.php">Login</a>
     </li>
+    <li class="nav-item">
+      <a class="nav-link" href="request.php">Request Appointment</a>
+    </li>
   </ul>
 </nav>
     <div class="container">
